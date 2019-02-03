@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 28, 2019 at 03:18 PM
+-- Generation Time: Feb 03, 2019 at 07:26 AM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.10
 
@@ -43,7 +43,7 @@ CREATE TABLE `students` (
   `tchoice` varchar(30) NOT NULL,
   `raw_score` float NOT NULL,
   `remarks` varchar(30) NOT NULL,
-  `date_ad` varchar(10) NOT NULL,
+  `date_ad` varchar(20) NOT NULL,
   `photo_link` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -52,8 +52,11 @@ CREATE TABLE `students` (
 --
 
 INSERT INTO `students` (`student_id`, `full_name`, `gender`, `school_last_attended`, `strand_course`, `grade_GWA`, `grade_Math`, `grade_English`, `grade_Science`, `fchoice`, `schoice`, `tchoice`, `raw_score`, `remarks`, `date_ad`, `photo_link`) VALUES
-(1, 'Dem Soriano', 'Male', 'Laguna Sta Polytechnic University', 'ICT', 89, 88, 75, 80, 'BSIT', 'BSCS', 'BA', 88.9, 'Past', '02/22/2019', ''),
-(2, 'Aby Serrano', 'Female', 'STI', 'ABM', 77, 77, 78, 89, 'BSBA', 'BSA', 'BSED', 90, 'Past', '02/28/2019', 'gggg');
+(1, 'Dem Soriano', 'Male', 'Laguna Sta Polytechnic University', 'ICT', 89, 88, 75, 80, 'BSIT', 'BSCS', 'BA', 88.9, 'Qualified', '02/22/2019', ''),
+(2, 'Aby Serrano', 'Female', 'STI', 'ABM', 77, 77, 78, 89, 'BSBA', 'BSA', 'BSED', 90, 'Qualified', '02/28/2019', 'gggg'),
+(3, 'James Cabantog', 'Male', 'LSPU', 'GAS', 80, 90, 84, 88, 'BSIT', 'BSBA', 'BSA', 90, 'Qualified', 'June/1/201', ''),
+(4, 'Harry De Leon', 'Male', 'LSPU', 'GAS', 80, 90, 84, 88, 'BSIT', 'BSBA', 'BSA', 90, 'Qualified', 'June/1/2019', ''),
+(5, 'Jenny Rose Vismonte', 'Female', 'STI', 'GAS', 80, 90, 84, 88, 'BSIT', 'BSBA', 'BSA', 90, 'Qualified', 'June/12/2019', '');
 
 -- --------------------------------------------------------
 
@@ -101,7 +104,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `student_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `student_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `users`
