@@ -1,5 +1,31 @@
 <?php
 $title=$_GET['title'];
+if(isset($_POST['add-std']))
+{
+  require '../db.php';
+  $fn =$_POST['fullname'];
+  $gender =$_POST['gender'];
+  $lsa =$_POST['school_last_attended'];
+  $sc =$_POST['strand_course'];
+  $gwa=$_POST['grade_GWA'];
+  $math =$_POST['grade_Math'];
+  $eng=$_POST['grade_English'];
+  $scie=$_POST['grade_Science'];
+  $fchoice =$_POST['fchoice'];
+  $schoice =$_POST['schoice'];
+  $tchoice =$_POST['tchoice'];
+  $rs =$_POST['raw_score'];
+  $rem =$_POST['remarks'];
+  $date=$_POST['month']."/".$_POST['day']."/".$_POST['year'];
+  $addsql ="INSERT INTO students(full_name,gender,school_last_attended,strand_course,grade_GWA,grade_Math,grade_English,grade_Science,fchoice,schoice,tchoice,raw_score,remarks,date_ad) VALUES ('".$fn."','".$gender."','".$lsa."','".$sc."',".$gwa.",".$math.",".$eng.",".$scie.",'".$fchoice."','".$schoice."','".$tchoice."','".$rs."','".$rem."','".$date."')";
+  $res= mysqli_query($conn,$addsql);
+  if($res)
+  {
+    echo "<script>alert('Student added successfully');
+    location.href='student_admission.php';
+    </script>";
+  }
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,37 +57,37 @@ $title=$_GET['title'];
     </div>
     <!-- Update input  -->
       <div class="upd-student">
-        <form class="form" name="add_student" method="post" action="add_data.php" method="post">
+        <form class="form" name="add_student" method="post">
           <label>Name: </label>
-          <input type="text" name="fullname" placeholder="Full Name"><br>
+          <input type="text" name="fullname" placeholder="Full Name" required><br>
           <label>Gender: </label>
-          <input type="text" name="gender" placeholder="Gender"><br>
+          <input type="text" name="gender" placeholder="Gender" required><br>
           <label>Last School Attended: </label>
-          <input type="text" name="school_last_attended" placeholder="School Name"><br>
+          <input type="text" name="school_last_attended" placeholder="School Name" required><br>
           <label>Strand / Course: </label>
-          <input type="text" name="strand_course" placeholder="Enter Student Strand" ><br>
+          <input type="text" name="strand_course" placeholder="Enter Student Strand" required ><br>
           <label>GWA: </label>
-          <input type="text" name="grade_GWA" placeholder="Grade"><br>
+          <input type="text" name="grade_GWA" placeholder="Grade" required><br>
           <label>Math: </label>
-          <input type="text" name="grade_Math" placeholder="Grade"><br>
+          <input type="text" name="grade_Math" placeholder="Grade" required><br>
           <label>English: </label>
-          <input type="text" name="grade_English" placeholder="Grade"><br>
+          <input type="text" name="grade_English" placeholder="Grade" required><br>
           <label>Science: </label>
-          <input type="text" name="grade_Science" placeholder="Grade"><br>
+          <input type="text" name="grade_Science" placeholder="Grade" required><br>
         </div>
         <div class="upd-student-2">
           <label>1st Choice: </label>
-          <input type="text" name="fchoice" placeholder="Course"><br>
+          <input type="text" name="fchoice" placeholder="Course" required><br>
           <label>2nd Choice: </label>
-          <input type="text" name="schoice" placeholder="Course"><br>
+          <input type="text" name="schoice" placeholder="Course" required><br>
           <label>3rd Choice: </label>
-          <input type="text" name="tchoice" placeholder="Course"><br>
+          <input type="text" name="tchoice" placeholder="Course" required><br>
           <label>Raw Score: </label>
-          <input type="text" name="raw_score" placeholder="Input Score"><br>
+          <input type="text" name="raw_score" placeholder="Input Score" required><br>
           <label>Remarks: </label>
-          <input type="text" name="remarks" placeholder="Remarks Here"><br>
+          <input type="text" name="remarks" placeholder="Remarks Here" required><br>
           <label>Date: </label>
-          <select>
+          <select name="year">
             <option value="2019">2019</option>
             <option value="2020">2020</option>
             <option value="2021">2021</option>
@@ -75,7 +101,7 @@ $title=$_GET['title'];
             <option value="2029">2029</option>
              <option value="2030">2030</option>
           </select>
-       <select>
+       <select name="day">
          <option value="1">1</option>
          <option value="2">2</option>
          <option value="3">3</option>
@@ -109,7 +135,7 @@ $title=$_GET['title'];
          <option value="31">31</option>
        </select>
        </select>
-          <select>
+          <select name="month">
             <option value="June">June</option>
             <option value="July">July</option>
             <option value="August">August</option>
@@ -127,7 +153,7 @@ $title=$_GET['title'];
           <input type="file" name="photo_link" placeholder="Course" style="text-indent: 0px"><br>
         </div>
         <div class="upd-btn">
-          <button type="submit" name="submit" class="btn btn-success">Add</button>
+          <button type="submit" name="add-std" class="btn btn-success">Add</button>
         </div>
         </form>
 </body>
