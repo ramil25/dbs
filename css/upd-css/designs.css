@@ -208,6 +208,18 @@ nav h1
 	border-radius: 5px;
 	border: none;
 }
+.upd-student-2 select
+{
+  width: 90px;
+  padding: 3px;
+  color: #000000;
+  font-size: 24px;
+  text-indent: 12px;
+  	background: #ffffff;
+	float:right;
+	border-radius: 5px;
+	border: none;
+}
 .upd-student-2 label
 {
 	font-weight: bold;

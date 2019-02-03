@@ -108,7 +108,7 @@ $noResult = '';
         <article>
         <p class="std-title">STUDENT ADMISSION</p>
           <div class="std-admission-1">
-            <a href="add_student.php">
+            <a href="add_student.php?title=ADD STUDENT">
             <button type="submit" name="student-account" class="btn btn-success" style="margin-bottom: 30px;margin-left:50px;">Add Student</button></a>
           </div>
           <div class="std-admission-2">
