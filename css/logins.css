@@ -1,0 +1,74 @@
+body
+{
+	background-color: #005080;
+
+}
+img
+{
+	padding: 5px;
+	margin: 15px;
+}
+.title
+{
+  background: rgba(153, 157, 172, 0.7);
+  border-radius: 20px;
+  margin-top: 170px;
+}
+h1
+{
+	padding: 18px;
+	font-size: 75px;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+	opacity: 1;
+}
+.log
+{
+	text-align: center;
+	margin-top: 100px;
+}
+label
+{
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+}
+input
+{
+	background-color: #303031;
+	font-size: 25px;
+	padding: 8px;
+	color: white;
+	width: 60%;
+	border: 0px;
+	border-radius: 10px;
+}
+.dark-primary
+{
+	color: white;
+	background-color: #051e83;
+	font-size: 30px;
+	font-weight: bold;
+	width: 150px;
+	padding: 10px;
+	border-radius: 10px;
+}
+@media(max-width: 768px)
+{
+	.lspu-logo img
+	{
+		margin-left: 30%;
+		margin-right: 30%;
+		display: block;
+		margin-bottom: -30%;
+	}
+	.title
+	{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	input {
+		width: 100%;
+	}
+}

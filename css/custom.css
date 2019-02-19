@@ -1,0 +1,53 @@
+body
+{
+	background-color: #005080;;
+	color: #fffffe;
+}
+.csidebar
+{
+		background-color: #01041b;
+		padding: 12px;
+		display: block;
+		position: fixed;
+		height: 100%;
+		text-align: center;
+		width: 16%;
+}
+.cont
+{
+	background-color: lightblue;
+	height: 100%;
+	width: 100%;
+}
+.csidebar img
+{
+	border-radius: 100px;
+	display: block;
+}
+nav span
+{
+	display: block;
+	float: left;
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	align-self: center;
+
+}
+nav .nav-center
+{
+	margin-left: 20%;
+}
+nav
+{
+	left: 0;
+	right: 0;
+	width: 100%;
+	position: absolute;
+	border-bottom: 1px solid white;
+	padding: 5px;
+}
+nav h1
+{
+	font-family: "Times new Roman", Times, serif;
+}
