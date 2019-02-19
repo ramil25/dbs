@@ -29,8 +29,13 @@
   				<h2>Siniloan (Host) Campus</h2></div></span>
   				</div>
   				</nav>
-				<h1 style="margin-top: 110px; text-align: right;">Welcome Admin!!</h1>
-				
+				<div id="btn-vertical">
+					<ul class="pull-left">
+					<li><a href="#" class="btn btn-success btn-lg">Edit Profile</a></li>
+					<li><a href="#" class=" btn btn-success btn-lg">Message</a></li>
+					<li><a href="#" class="btn btn-success btn-lg">History</a></li>
+				</ul>
+				</div>
 			</div>
 		</div>
 		</div>
