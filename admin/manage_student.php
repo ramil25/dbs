@@ -27,7 +27,7 @@
 		</div>
 		</div>
         <div class="back-css">
-          <button type="submit" name="back" >back</button>
+          <a href="index.php" class="btn btn-success" >Home</a>
         </div>
 
           <div class="manage-btn">
