@@ -63,6 +63,8 @@ if($conn)
 						<input type="text" placeholder="Your Username" name="un" /><br><br>
 						<label>Password:</label>
 						<input type="password" placeholder="Your Password" name="ps"  />
+						<br>
+						<a style="font-size: 20px; color: red;" class=" label label-danger" href="#">Forgot Password</a>
 						<br><br>
 						<button type="submit" class="btn dark-primary" name="login">Login</button>
 					</form>

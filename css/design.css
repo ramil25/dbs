@@ -222,3 +222,22 @@ nav h1
 	background: #70ad47;
 	font-weight: bold;
 }
+.year-menu
+{
+	margin-top: 15%;
+}
+.year-menu h1,li
+{
+	list-style: none;
+	font-size: 70px;
+}
+.year-menu ul li a
+{
+text-decoration: none;
+list-style: none;
+font-size: 30px;
+margin-top: 20px;
+margin-left: 10px;
+font-weight: bold;
+width: 200px;
+}

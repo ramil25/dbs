@@ -15,7 +15,7 @@
 					<a href="profile.php" class="fluid"><img src="../img/default.png" width="100" height="100" class="img-circle" style="display: block; margin: 0 auto;"></a><br><br>
 				<a href="index.php" class="btn btn-block btn-primary">Home</a><br><br>
 				<a href="manage_student.php" class="btn btn-block btn-primary">Student</a><br><br>
-				<a class="btn btn-block btn-primary">Enrolees Chart</a><br><br>
+				<a href="year_menu.php" class="btn btn-block btn-primary">Enrolees Chart</a><br><br>
 				<a class="btn btn-block btn-primary">Cluster Program</a><br><br>
 				<a class="btn btn-block btn-primary">Qualifying Exam</a><br><br>
 				<a href="../index.php" class="btn btn-block btn-primary">Logout</a>
