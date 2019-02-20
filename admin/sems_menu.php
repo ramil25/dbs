@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Yearly Enrolled</title>
+	<title>Semester Menu</title>
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet"  href="../css/design.css">
 	<link rel="icon" href="../img/lspu.png">
@@ -24,19 +24,17 @@
   				</nav>
   				<!--Yerly Button-->
   				<div class="year-menu">
-            <h1 class="text-center">ENROLEES CHART</h1><br>
+            <h1 class="text-center">SEMESTRAL ENROLEES</h1><br>
             <ul>
-            	<li><a class="btn btn-success btn-lg" href="sems_menu.php">2016</a></li>
-            	<li><a class="btn btn-success btn-lg" href="sems_menu.php">2017</a></li>
-            	<li><a class="btn btn-success btn-lg" href="sems_menu.php">2018</a></li>
-            	<li><a class="btn btn-success btn-lg" href="sems_menu.php">2019</a></li>
+            	<li><button type="submit" class="btn btn-success btn-lg" href="">1st Semester</button></li>
+            	<li><button type="submit" class="btn btn-success btn-lg" href="">2nd Semester</button></li>
             </ul>
           </div>
 			</div>
 		</div>
 		</div>
         <div class="back-css">
-          <a href="index.php" class="btn btn-success" >Home</a>
+          <a href="year_menu.php" class="btn btn-success" >Back</a>
         </div>
 
 </body>
