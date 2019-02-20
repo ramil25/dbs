@@ -79,6 +79,57 @@ nav h1
 	outline: none;
 	border: none;
 }
+/* photo-edit */
+.photo-edit
+{
+	position: fixed;
+	top: 40%;
+	left: 18%;
+	transform: translate(-50%,-50%);
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+.photo-edit a
+{
+	color:#ffffff;
+	font-weight:bold;
+	text-decoration: none;
+}
+.photo-edit a:hover
+{
+	  color:#ffffff;
+	  font-weight:bold;
+	  text-decoration: none;
+}
+/* student-name */
+.std-name
+{
+	font-weight: bold;
+	font-size: 40px;
+	position: fixed;
+	top: 30%;
+	left: 35%;
+	transform: translate(-50%,-50%);
+	background: #026bb8;
+	padding: 20px;
+	border-radius: 10px;
+}
+/* avatar photo */
+.avatar
+{
+	position: fixed;
+	top: 30%;
+	left: 18%;
+	transform: translate(-50%,-50%);
+}
+.avatar img
+{
+	border-radius: 100px;
+	width: 100px;
+	height: 100px;
+}
 /* back btn */
 .back-css
 {
@@ -88,18 +139,86 @@ nav h1
 	transform: translate(-50%,-50%);
 	margin-left: 30px;
 }
-.back-css button
+.back-css a
 {
-	font-size: 20px;
+	font-size: 18px;
+	font-family: Arial;
+	color: #ffffff;
+	margin-left: 20px;
+	border-radius: 5px;
+	background: #70ad47;
+	outline: none;
+	border: none;
+	font-weight: bold;
+}
+/*  upd-input student css  */
+.upd-student {
+	position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  align-items: center;
+  justify-content:center;
+	position: fixed;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	 margin-left: 30px;
+}
+
+.upd-student input
+{
+	background: #222a35;
+	margin-right: 295px;
+	float:right;
+	border-radius: 5px;
+	border: none;
+
+}
+.upd-student label
+{
+	font-family: Arial;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.upd-student-2
+{
+	position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  align-items: center;
+  justify-content:center;
+	position: fixed;
+	top: 65.3%;
+	left: 70%;
+	transform: translate(-50%,-50%);
+	 margin-left: 30px;
+}
+.upd-student-2 input
+{
+	background: #222a35;
+	margin-right: 140px;
+	float:right;
+	border-radius: 5px;
+	border: none;
+}
+.upd-student-2 label
+{
+	font-weight: bold;
+	font-family: Arial;
+	margin-bottom: 15px;
+}
+/*  upd button */
+.upd-btn
+{
+	position: fixed;
+	top: 85%;
+	left: 56%;
+	transform: translate(-50%,-50%);
 	font-family: Arial;
 	font-weight: bold;
 	height: 40px;
 	width: 110px;
-	padding: 0 20px 0 20px;
-	color: #ffffff;
-	margin-left: 20px;
-	border-radius: 10px;
+}
+.upd-btn button
+{
 	background: #70ad47;
-	outline: none;
-	border: none;
+	font-weight: bold;
 }
