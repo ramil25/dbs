@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome</title>
+	<title>Profile</title>
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet"  href="../css/custom.css">
 	<link rel="icon" href="../img/lspu.png">
@@ -31,7 +31,7 @@
   				</nav>
 				<div id="btn-vertical">
 					<ul class="pull-left">
-					<li><a href="#" class="btn btn-success btn-lg">Edit Profile</a></li>
+					<li><a href="update_profile.php" class="btn btn-success btn-lg">Edit Profile</a></li>
 					<li><a href="#" class=" btn btn-success btn-lg">Message</a></li>
 					<li><a href="#" class="btn btn-success btn-lg">History</a></li>
 				</ul>

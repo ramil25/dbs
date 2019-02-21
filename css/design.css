@@ -171,6 +171,9 @@ nav h1
 	float:right;
 	border-radius: 5px;
 	border: none;
+	font-size: 24px;
+	width: auto;
+	padding: 3px;
 
 }
 .upd-student label
@@ -198,6 +201,8 @@ nav h1
 	float:right;
 	border-radius: 5px;
 	border: none;
+	font-size: 24px;
+	padding: 3px;
 }
 .upd-student-2 label
 {
