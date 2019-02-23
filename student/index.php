@@ -14,10 +14,10 @@
 					<h4>Profile</h4>
 					<img src="../img/default.png" width="100" height="100" class="img-circle" style="display: block; margin: 0 auto;"><br><br>
 					<br><br>
-				<a class="btn btn-block btn-primary">Transaction</a>
+				<a href="transaction.php" class="btn btn-block btn-primary">Transaction</a>
 				<br><br>
-				<a class="btn btn-block btn-primary">Message</a><br><br>
-				<a class="btn btn-block btn-primary">History</a><br><br>
+				<a href="message.php" class="btn btn-block btn-primary">Message</a><br><br>
+				<a href="history.php" class="btn btn-block btn-primary">History</a><br><br>
 				<a class="btn btn-block btn-primary" href="../index.php">Logout</a><br><br>
 				</div>
 			</div>
