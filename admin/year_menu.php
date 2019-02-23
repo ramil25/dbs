@@ -26,10 +26,10 @@
   				<div class="year-menu">
             <h1 class="text-center">ENROLEES CHART</h1><br>
             <ul>
-            	<li><a class="btn btn-success btn-lg" href="sems_menu.php">2016</a></li>
-            	<li><a class="btn btn-success btn-lg" href="sems_menu.php">2017</a></li>
-            	<li><a class="btn btn-success btn-lg" href="sems_menu.php">2018</a></li>
-            	<li><a class="btn btn-success btn-lg" href="sems_menu.php">2019</a></li>
+            	<li><a class="btn btn-success btn-lg" href="sems_menu.php?year=2016">2016</a></li>
+            	<li><a class="btn btn-success btn-lg" href="sems_menu.php?year=2017">2017</a></li>
+            	<li><a class="btn btn-success btn-lg" href="sems_menu.php?year=2018">2018</a></li>
+            	<li><a class="btn btn-success btn-lg" href="sems_menu.php?year=2019">2019</a></li>
             </ul>
           </div>
 			</div>

@@ -161,7 +161,7 @@ nav h1
 	top: 65%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	 margin-left: 30px;
+	 margin-left: 18px;
 }
 
 .upd-student input
@@ -170,6 +170,8 @@ nav h1
 	margin-right: 295px;
 	float:right;
 	border-radius: 5px;
+	color: #ffffff;
+  margin-top: 8px;
 	border: none;
 	font-size: 24px;
 	width: auto;
@@ -178,9 +180,13 @@ nav h1
 }
 .upd-student label
 {
-	font-family: Arial;
-	font-weight: bold;
-	margin-bottom: 15px;
+	border-radius: 5px;
+	color: #ffffff;
+  margin-top: 8px;
+	border: none;
+	font-size: 24px;
+	width: auto;
+	padding: 3px;
 }
 .upd-student-2
 {
@@ -197,7 +203,9 @@ nav h1
 .upd-student-2 input
 {
 	background: #222a35;
-	margin-right: 140px;
+	color: #ffffff;
+	margin-top: 8px;
+	margin-right: 100px;
 	float:right;
 	border-radius: 5px;
 	border: none;
@@ -206,15 +214,19 @@ nav h1
 }
 .upd-student-2 label
 {
-	font-weight: bold;
-	font-family: Arial;
-	margin-bottom: 15px;
+	border-radius: 5px;
+	color: #ffffff;
+  margin-top: 8px;
+	border: none;
+	font-size: 24px;
+	width: auto;
+	padding: 3px;
 }
 /*  upd button */
 .upd-btn
 {
 	position: fixed;
-	top: 85%;
+	top: 90%;
 	left: 56%;
 	transform: translate(-50%,-50%);
 	font-family: Arial;

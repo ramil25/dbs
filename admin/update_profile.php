@@ -49,7 +49,7 @@
           <input type="Password" name="current-pwd" placeholder="Current Password"><br>
           <label>New Password: </label>
           <input type="Password" name="new-pwd" placeholder="Choose Secured Password" ><br>
-          <label>Confirm New Password: </label>
+          <label>Confirm<br> New Password: </label>
           <input type="text" name="confirm-new-pwd" placeholder="Enter Again"><br>
         </div>
         <div class="upd-student-2">

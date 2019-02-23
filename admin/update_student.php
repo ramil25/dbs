@@ -28,7 +28,7 @@
     </div>
     <!-- EDIT PHOTO AVATAR -->
     <div class="avatar">
-     <button type="file"><img src="../img/default.png" alt="your-photo" /></button>
+     <button style="border: none; background-color: transparent;" type="file"><img src="../img/default.png" alt="your-photo" /></button>
     </div>
     <!-- EDIT PHOTO BUTTON -->
     <div class="photo-edit">
@@ -48,8 +48,8 @@
           <label>Current Password: </label>
           <input type="Password" name="current-pwd" placeholder="Choose Secured Password"><br>
           <label>New Password: </label>
-          <input type="Password" name="new-pwd" ><br>
-          <label>Confirm New Password: </label>
+          <input type="Password" name="new-pwd" placeholder="Enter your new Password" ><br>
+          <label>Confirm<br> New Password: </label>
           <input type="text" name="confirm-new-pwd" placeholder="Enter Again"><br>
         </div>
         <div class="upd-student-2">
