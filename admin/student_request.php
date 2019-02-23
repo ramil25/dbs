@@ -1,16 +1,7 @@
-
-<?php
-$year=$_GET['year'];
-
-if ($_GET['year'] == '2016') {
-
-
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Semester Menu</title>
+	<title>Manage Student</title>
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet"  href="../css/design.css">
 	<link rel="icon" href="../img/lspu.png">
@@ -31,30 +22,22 @@ if ($_GET['year'] == '2016') {
   				<h2>Siniloan (Host) Campus</h2></div></span>
   				</div>
   				</nav>
-  				<!--Yerly Button-->
-  				<div class="year-menu">
-            <h1 class="text-center"><?php echo $year;  ?> ENROLEES CHART</h1><br>
-            <ul>
-            	<li><button type="submit" class="btn btn-success btn-lg" href="">1st Semester</button></li>
-            	<li><button type="submit" class="btn btn-success btn-lg" href="">2nd Semester</button></li>
-            </ul>
-          </div>
+
 			</div>
 		</div>
 		</div>
         <div class="back-css">
-          <a href="year_menu.php" class="btn btn-success" >Back</a>
+          <a href="index.php" class="btn btn-success" >Home</a>
         </div>
-
+        <p class="std-title">Manage Student Request</p>
+          <div class="std-request-1">
+            <button type="submit" name="student-account" style="margin-bottom: 30px;margin-left:50px;">Schedule of Video/Personel Counseling</button>
+          </div>
+          <div class="std-request-2">
+            <button type="submit" name="manage-student-request" style="margin-left: 140px;">Good Moral</button>
+          </div>
 </body>
 </html>
 <script src="../js/bootstrap.js">
 
 </script>
-<?php
-}
-else
-{
-	header("location: ../admin/year_menu.php?category=ENROLLEES%20CHART");
-}
-?>

@@ -269,3 +269,59 @@ margin-left: 10px;
 font-weight: bold;
 width: 300px;
 }
+/* manage-student-request-css */
+.std-title
+{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 50px;
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin-left: 30px;
+}
+.std-request-1
+{
+	position: fixed;
+	top: 55%;
+	left: 45%;
+	transform: translate(-50%,-50%);
+	margin-left: 30px;
+}
+.std-request-1 button
+{
+	font-size: 25px;
+	font-family: Arial;
+	font-weight: bold;
+	height: 85px;
+	width: 400px;
+	color: #ffffff;
+	margin-left: 20px;
+	border-radius: 10px;
+	background: #70ad47;
+	outline: none;
+	border: none;
+}
+.std-request-2
+{
+	position: fixed;
+	top: 70%;
+	left: 41.5%;
+	transform: translate(-50%,-50%);
+	margin-left: 30px;
+}
+.std-request-2 button
+{
+	font-size: 25px;
+	font-family: Arial;
+	font-weight: bold;
+	height: 85px;
+	width: 400px;
+	color: #ffffff;
+	margin-left: 20px;
+	border-radius: 10px;
+	background: #70ad47;
+	outline: none;
+	border: none;
+}
