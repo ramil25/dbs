@@ -33,7 +33,7 @@
           <div class="manage-btn">
             <button type="submit" name="student-admission" >Student<br>Admission</button>
             <button type="submit" name="student-account" style="margin-bottom: 30px;margin-left:50px;">Student<br>Account</button>
-            <button type="submit" name="manage-student-request" style="margin-left: 140px;">Manage Student Request</button>
+            <a href="student_request.php"><button type="submit" name="manage-student-request" style="margin-left: 140px;">Manage Student Request</button></a>
           </div>
 </body>
 </html>
