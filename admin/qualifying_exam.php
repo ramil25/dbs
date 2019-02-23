@@ -7,7 +7,7 @@ $year=$_GET['year'];
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Semester Menu</title>
+	<title>Qualifying Exam</title>
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet"  href="../css/design.css">
 	<link rel="icon" href="../img/lspu.png">
@@ -30,12 +30,11 @@ $year=$_GET['year'];
   				</nav>
   				<!--Yerly Button-->
   				<div class="year-menu">
-            <h1 class="text-center"><?php echo $year;  ?> ENROLEES CHART</h1><br>
+            <h1 class="text-center">Qualifying Exam</h1><br>
             <ul>
-            	<li><button type="submit" class="btn btn-success btn-lg" href="">1st Semester</button></li>
-            	<li><button type="submit" class="btn btn-success btn-lg" href="">2nd Semester</button></li>
+            	<li><button type="submit" class="btn btn-success btn-lg" href="">June 1, <?php echo $year; ?></button></li>
             </ul>
-          </div>
+          </div>	
 			</div>
 		</div>
 		</div>
