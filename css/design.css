@@ -239,9 +239,30 @@ nav h1
 	background: #70ad47;
 	font-weight: bold;
 }
-.year-menu
+.year-menu, .cluster-title
 {
 	margin-top: 15%;
+}
+.cluster-title h1
+{
+	font-size: 70px;
+}
+
+.cluster-title .cluster-menu
+{
+	font-size: 40px;
+	margin-top: 15%;
+	margin-left: 10%;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 900px;
+	text-align: center;
+}
+.cluster-title .cluster-menu a
+{
+	margin-left: 10%;
+	margin-top: 3%;
+width: 100px;
 }
 .year-menu h1,li
 {

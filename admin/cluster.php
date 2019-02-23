@@ -7,7 +7,7 @@ $year=$_GET['year'];
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Semester Menu</title>
+	<title>Cluster</title>
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet"  href="../css/design.css">
 	<link rel="icon" href="../img/lspu.png">
@@ -28,13 +28,19 @@ $year=$_GET['year'];
   				<h2>Siniloan (Host) Campus</h2></div></span>
   				</div>
   				</nav>
-  				<!--Yerly Button-->
-  				<div class="year-menu">
-            <h1 class="text-center"><?php echo $year;  ?> ENROLEES CHART</h1><br>
-            <ul>
-            	<li><button type="submit" class="btn btn-success btn-lg" href="">1st Semester</button></li>
-            	<li><button type="submit" class="btn btn-success btn-lg" href="">2nd Semester</button></li>
-            </ul>
+  				<!--cluster menu-->
+  				<div class="cluster-title">
+            <h1 class="text-center">CLUSTER</h1><br>
+            	<div class="cluster-menu text-center">
+            		<a class="btn btn-lg btn-success" href="#">CBMA</a>
+            		<a class="btn btn-lg btn-success" href="#">CCJE</a>
+            		<a class="btn btn-lg btn-success" href="#">CTE</a>
+            		<a  class="btn btn-lg btn-success" href="#">IAE</a>
+            		<a class="btn btn-lg btn-success" href="#">CCS</a>
+            		<a class="btn btn-lg btn-success" href="#">CA</a>
+            		<a class="btn btn-lg btn-success" href="#">CAS</a>
+            		<a class="btn btn-lg btn-success" href="#">CHMT</a>
+            	</div>
           </div>
 			</div>
 		</div>
@@ -48,4 +54,4 @@ $year=$_GET['year'];
 <script src="../js/bootstrap.js">
 
 </script>
-
+?>
