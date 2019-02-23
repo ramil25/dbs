@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Message</title>
+	<title>Create Message</title>
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet"  href="../css/design.css">
 	<link rel="icon" href="../img/lspu.png">
@@ -29,12 +29,11 @@
         <div class="back-css">
           <a href="index.php" class="btn btn-success" >Home</a>
         </div>
-
-          <div class="manage-btn">
-          	<a href="create_message.php">
-            <button type="submit" name="create-message" >Create<br>
-            Message</button></a>
-            <button type="submit" name="view-mail-box" style="margin-bottom: 30px;margin-left:50px;">View Mail<br>Box</button>
+        	<form>
+ 				 <textarea class="comment" placeholder="Write Message..."></textarea>
+ 				 <a href="create_message.php">
+         		   <button class="submit-message" type="submit" name="submit-message" >Submit</button></a>
+			</form>
           </div>
 </body>
 </html>

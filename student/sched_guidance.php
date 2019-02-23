@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Message</title>
+	<title>Schedule for Guidance</title>
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet"  href="../css/design.css">
 	<link rel="icon" href="../img/lspu.png">
@@ -29,13 +29,19 @@
         <div class="back-css">
           <a href="index.php" class="btn btn-success" >Home</a>
         </div>
+        	<form>
+        		<h4 class="label"> Name of Student:  </h4>
+ 				<input class="input" type="text" id="name"><br><br>
+ 				<h4 class="label label1"> Cause of Counselling:  </h4>
+ 				<input class="input input1" type="text" id="cause"><br><br>
+ 				<h4 class="label label2"> Date:  </h4>
+ 				<input class="input input2" type="date" id="date"><br><br>
+ 				<h4 class="label label3"> Time:  </h4>
+ 				<input class="input input3" type="time" id="time">
 
-          <div class="manage-btn">
-          	<a href="create_message.php">
-            <button type="submit" name="create-message" >Create<br>
-            Message</button></a>
-            <button type="submit" name="view-mail-box" style="margin-bottom: 30px;margin-left:50px;">View Mail<br>Box</button>
-          </div>
+ 				<a href="create_message.php">
+         		   <button class="submit-message submit-message1" type="submit" name="submit-message" >Submit</button></a>
+			</form>
 </body>
 </html>
 <script src="../js/bootstrap.js">

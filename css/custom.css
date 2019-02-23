@@ -71,3 +71,14 @@ ul li
 	margin-top: 50px;
 }
 
+
+.input1 {
+	position: absolute;
+	top: 200px;
+	width: 200px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	background-color: #222a35;
+ 	color: white;
+}

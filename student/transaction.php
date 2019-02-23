@@ -31,7 +31,9 @@
         </div>
         
           <div class="manage-btn">
-            <button type="submit" name="student-admission" >Request<br>Good Moral</button>
+          	<a href="req_good_moral.php">
+            <button type="submit" name="student-admission" >Request<br>Good Moral</button></a>		
+            <a href="sched_guidance.php">
             <button type="submit" name="student-account" style="margin-bottom: 30px;margin-left:50px;">Schedule<br>for Guidance</button>
           </div>
 </body>

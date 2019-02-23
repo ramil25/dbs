@@ -325,3 +325,94 @@ width: 300px;
 	outline: none;
 	border: none;
 }
+
+.comment {
+	position: absolute;
+	top: 200px;
+	left: 400px;
+ 	width: 900px;
+ 	height: 350px;
+ 	padding: 12px 20px;
+ 	box-sizing: border-box;
+ 	border: 2px solid #ccc;
+ 	border-radius: 4px;
+ 	background-color: #f8f8f8;
+ 	font-size: 16px;
+ 	resize: none;
+}
+
+.submit-message {
+	position: absolute;
+	top: 570px;
+	left: 800px;
+ 	background-color: #4CAF50;
+ 	border: none;
+ 	color: white;
+ 	text-align: center;
+ 	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+ 	margin: 4px 2px;
+ 	cursor: pointer;
+ 	border-radius: 8px;
+}
+
+.submit-message1 {
+	position: absolute;
+	top: 480px;
+	left: 650px;
+}
+
+
+.input {
+	position: absolute;
+	top: 200px;
+	width: 350px;
+	left: 500px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	background-color: #303031;
+ 	color: white;
+ 	border: none;
+ 	border-radius: 8px;
+
+}
+
+.input1 {
+	position: absolute;
+	top: 260px;
+}
+
+.input2 {
+	position: absolute;
+	top: 320px;
+}
+
+.input3 {
+	position: absolute;
+	top: 380px;
+}
+
+.label {
+	position: absolute;
+	top: 215px;
+	left: 250px;
+}
+
+.label1 {
+	position: absolute;
+	top: 275px;
+	left: 210px;
+}
+
+.label2 {
+	position: absolute;
+	top: 335px;
+	left: 385px;
+}
+
+.label3 {
+	position: absolute;
+	top: 395px;
+	left: 385px;
+}
