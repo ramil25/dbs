@@ -1,3 +1,7 @@
+<?php
+$ym =$_GET['category'];
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,7 +28,7 @@
   				</nav>
   				<!--Yerly Button-->
   				<div class="year-menu">
-            <h1 class="text-center">ENROLEES CHART</h1><br>
+            <h1 class="text-center"><?php echo $ym ;  ?></h1><br>
             <ul>
             	<li><a class="btn btn-success btn-lg" href="sems_menu.php?year=2016">2016</a></li>
             	<li><a class="btn btn-success btn-lg" href="sems_menu.php?year=2017">2017</a></li>
