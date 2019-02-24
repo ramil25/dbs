@@ -56,6 +56,15 @@ body
 		text-align: center;
 		width: 50px;
 }
+.year-menu
+{
+	margin-top: 5%;
+}
+.year-menu h1,li
+{
+	list-style: none;
+	font-size: 70px;
+}
 @media (max-width:768px) {
 	.nav-center h1
 	{

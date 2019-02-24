@@ -27,20 +27,20 @@
 		</div>
 		</div>
         <div class="back-css">
-          <a href="index.php" class="btn btn-success" >Home</a>
+          <a href="javascript:history.go(-1)" class="btn btn-success">Back</a>
         </div>
         	<form>
         		<h4 class="label"> Name of Student:  </h4>
- 				<input class="input" type="text" id="name"><br><br>
+ 				<input style="font-weight: bold; font-size: 20px;" class="input" type="text" id="name"><br><br>
  				<h4 class="label label1"> Cause of Counselling:  </h4>
- 				<input class="input input1" type="text" id="cause"><br><br>
+ 				<input style="font-weight: bold; font-size: 20px;" class="input input1" type="text" id="cause"><br><br>
  				<h4 class="label label2"> Date:  </h4>
- 				<input class="input input2" type="date" id="date"><br><br>
+ 				<input style="font-weight: bold; font-size: 20px;" class="input input2" type="date" id="date"><br><br>
  				<h4 class="label label3"> Time:  </h4>
- 				<input class="input input3" type="time" id="time">
+ 				<input style="font-weight: bold; font-size: 20px;" class="input input3" type="time" id="time">
 
  				<a href="create_message.php">
-         		   <button class="submit-message submit-message1" type="submit" name="submit-message" >Submit</button></a>
+         		   <button style="font-weight: bold; font-size: 20px;" class="submit-message submit-message1 btn btn-lg btn-success" type="submit" name="submit-message" >Submit</button></a>
 			</form>
 </body>
 </html>

@@ -1,14 +1,18 @@
+<?php
+$year =$_GET['year'];
+$sem =$_GET['sem'];
+?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome</title>
+	<title>Chart</title>
   <script src="../Chart.js-2.7.3/dist/chart.min.js"></script>
 	<script src="../chartjs-plugin-datalabels-0.5.0/dist/chartjs-plugin-datalabels.js"></script>
 	<link rel="stylesheet" href="../css/bootstrap.css">
 <link rel="stylesheet" href="../css/styles.css">
 	<link rel="icon" href="..	/img/lspu.png">
 </head>
-<body>
+<body>SSS
 		<div class="row">
 			<div class="col-md-2 col-lg-2 ">
 				<div class="csidebar">
@@ -23,21 +27,24 @@
   				<h1>Laguna State Polytechnic University</h1>
 					<h2>Siniloan (Host) Campus</h2>
 				</div>
+      </nav>
+          <div class="year-menu">
+            <h1 class="text-center"><?php echo $year.' '.$sem;?><br> ENROLEES CHART</h1><br>
+            </div>
+            <div id="dis-chart">
 
-					</div>
-  				</nav>
+              <h2 class="text-center">No data to display yet</h2>
+              <canvas id="myChart" width="1000" height="500"></canvas>
+            </div>
+          </div>
 
-			</div>
-		</div>
-		</div>
 				<div class="pie-label">
 
 				</div>
         <div class="css-back">
-          <a href="index.php" class="btn btn-success" >Home</a>
+           <a href="javascript:history.go(-1)" class="btn btn-success">Back</a>
         </div>
 
-			    <canvas id="myChart" width="1000" height="500"></canvas>
 
 </body>
 </html>
