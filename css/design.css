@@ -351,7 +351,7 @@ width: 300px;
 .comment {
 	position: absolute;
 	top: 200px;
-	left: 400px;
+	left: 200px;
  	width: 900px;
  	height: 350px;
  	padding: 12px 20px;
@@ -437,6 +437,9 @@ width: 300px;
 	position: absolute;
 	top: 395px;
 	left: 385px;
+<<<<<<< HEAD
+}
+=======
 =======
 >>>>>>> d6ed678a431e1957aabd195d438922b7087d6e2c
 }
@@ -491,3 +494,4 @@ width: 300px;
 	outline: none;
 	border: none;
 }
+>>>>>>> 3c091834d3194774ad0cdf1019d81a938a4fa52e
