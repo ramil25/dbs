@@ -31,15 +31,12 @@
         </div>
         	<form>
         		<h4 class="label"> Name of Student:  </h4>
-<<<<<<< HEAD
  				<input class="input" type="text" id="name" placeholder="Input text here.."><br><br>
  				<h4 class="label label1"> Cause of Counselling:  </h4>
  				<input class="input input1" type="text" id="cause" placeholder="Input text here.."><br><br>
-=======
  				<input style="font-weight: bold; font-size: 20px;" class="input" type="text" id="name"><br><br>
  				<h4 class="label label1"> Cause of Counselling:  </h4>
  				<input style="font-weight: bold; font-size: 20px;" class="input input1" type="text" id="cause"><br><br>
->>>>>>> 3c091834d3194774ad0cdf1019d81a938a4fa52e
  				<h4 class="label label2"> Date:  </h4>
  				<input style="font-weight: bold; font-size: 20px;" class="input input2" type="date" id="date"><br><br>
  				<h4 class="label label3"> Time:  </h4>
