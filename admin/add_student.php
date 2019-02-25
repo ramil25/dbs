@@ -71,7 +71,7 @@
         </div>
         <!-- update-btn  -->
         <div class="upd-btn">
-          <button type="submit" name="upd-btn" class="btn btn-success">Update</button>
+          <button type="submit" name="upd-btn" class="btn btn-success">Create</button>
         </div>
         </form>
 </body>
