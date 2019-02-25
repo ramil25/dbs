@@ -277,7 +277,7 @@ font-size: 30px;
 margin-top: 20px;
 margin-left: 10px;
 font-weight: bold;
-width: 200px;
+width: 250px;
 }
 
 .year-menu ul li button
@@ -437,4 +437,61 @@ width: 300px;
 	position: absolute;
 	top: 395px;
 	left: 385px;
+<<<<<<< HEAD
 }
+=======
+=======
+>>>>>>> d6ed678a431e1957aabd195d438922b7087d6e2c
+}
+.std-admission-1 button,.std-admission-2 button,.std-admission-3 button
+{
+	font-size: 17px;
+	font-family: Arial;
+	font-weight: bold;
+	height: 55px;
+	width: 150px;
+	color: #ffffff;
+	margin-left: 20px;
+	border-radius: 10px;
+	background: #70ad47;
+	outline: none;
+	border: none;
+	margin-bottom: 60px;
+}
+.std-admission-1
+{
+	position: fixed;
+	top: 50%;
+	left: 25%;
+	transform: translate(-50%,-50%);
+}
+.std-admission-2
+{
+	position: fixed;
+	top: 65%;
+	left: 21.5%;
+	transform: translate(-50%,-50%);
+}
+.std-admission-3
+{
+	position: fixed;
+	top: 78%;
+	left: 21.5%;
+	transform: translate(-50%,-50%);
+}
+.search-bar
+{
+	position: fixed;
+	top: 40%;
+	left: 70%;
+	transform: translate(-50%,-50%);
+}
+.search-bar input
+{
+	height: 40px;
+	width: 500px;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+}
+>>>>>>> 3c091834d3194774ad0cdf1019d81a938a4fa52e

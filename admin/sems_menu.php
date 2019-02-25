@@ -1,7 +1,6 @@
 
 <?php
 $year=$_GET['year'];
-
 ?>
 
 <!DOCTYPE html>
@@ -32,8 +31,8 @@ $year=$_GET['year'];
   				<div class="year-menu">
             <h1 class="text-center"><?php echo $year;  ?> ENROLEES CHART</h1><br>
             <ul>
-            	<li><button type="submit" class="btn btn-success btn-lg" href="">1st Semester</button></li>
-            	<li><button type="submit" class="btn btn-success btn-lg" href="">2nd Semester</button></li>
+            	<li><?php echo '<a href="chart.php?year='.$year.'&sem=1st Semester" type="submit" class="btn btn-success btn-lg">1st Semester</a>'; ?></li>
+            	<li><?php echo '<a href="chart.php?year='.$year.'&sem=2nd Semester" type="submit" class="btn btn-success btn-lg">2nd Semester</a>'; ?></li>
             </ul>
           </div>
 			</div>

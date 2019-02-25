@@ -3,7 +3,7 @@
 <head>
 	<title>Manage Student</title>
 	<link rel="stylesheet" href="../css/bootstrap.css">
-	<link rel="stylesheet"  href="../css/design.css">
+	<link rel="stylesheet"  href="../css/upd-css/designs(2).css">
 	<link rel="icon" href="../img/lspu.png">
 </head>
 <body>
@@ -29,12 +29,18 @@
         <div class="back-css">
           <a href="javascript:history.go(-1)" class="btn btn-success">Back</a>
         </div>
-        <p class="std-title">Manage Student Request</p>
-          <div class="std-request-1">
-            <button type="submit" name="student-account" style="margin-bottom: 30px;margin-left:50px;">Schedule of Video/Personel Counseling</button>
+        <div class="search-bar">
+          <input type="text" name="search" class="form-control" placeholder="Search...">
+        </div>
+        <p class="std-title">STUDENT ACCOUNT</p>
+          <div class="std-admission-1">
+            <button type="submit" name="student-account" class="btn btn-success" style="margin-bottom: 30px;margin-left:50px;">Create Account</button>
           </div>
-          <div class="std-request-2">
-            <button type="submit" name="manage-student-request" style="margin-left: 140px;">Good Moral</button>
+          <div class="std-admission-2">
+            <button type="submit" name="manage-student-request" class="btn btn-success" style="margin-left: 140px;">Update Account</button>
+          </div>
+          <div class="std-admission-3">
+            <button type="submit" name="manage-student-request" class="btn btn-success" style="margin-left: 140px;">View All</button>
           </div>
 </body>
 </html>

@@ -27,12 +27,12 @@
 		</div>
 		</div>
         <div class="back-css">
-          <a href="index.php" class="btn btn-success" >Home</a>
+          <a href="javascript:history.go(-1)" class="btn btn-success">Back</a>
         </div>
         	<form>
  				 <textarea class="comment" placeholder="Write Message..."></textarea>
  				 <a href="create_message.php">
-         		   <button class="submit-message" type="submit" name="submit-message" >Submit</button></a>
+         		   <button style="font-weight: bold; font-size: 20px;" class="submit-message btn btn-lg btn-success" type="submit" name="submit-message" >Submit</button></a>
 			</form>
           </div>
 </body>
