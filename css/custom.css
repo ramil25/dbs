@@ -1,10 +1,15 @@
 body
 {
+		top: 0;
+	bottom: 0;
+	margin-top: 0px;
+	margin-bottom: : 0px;
 	background-color: #005080;;
 	color: #fffffe;
 }
 .csidebar
 {
+		overflow: auto;
 		background-color: #01041b;
 		padding: 12px;
 		display: block;
