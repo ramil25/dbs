@@ -17,7 +17,6 @@
 				<a href="transaction.php" class="btn btn-block btn-primary">Transaction</a>
 				<br><br>
 				<a href="message.php" class="btn btn-block btn-primary">Message</a><br><br>
-				<a href="history.php" class="btn btn-block btn-primary">History</a><br><br>
 				<a class="btn btn-block btn-primary" href="../index.php">Logout</a><br><br>
 				</div>
 			</div>

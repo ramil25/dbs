@@ -33,7 +33,6 @@
 					<ul class="pull-left">
 					<li><a href="update_profile.php" class="btn btn-success btn-lg">Edit Profile</a></li>
 					<li><a href="#" class=" btn btn-success btn-lg">Message</a></li>
-					<li><a href="#" class="btn btn-success btn-lg">History</a></li>
 				</ul>
 				</div>
 			</div>
