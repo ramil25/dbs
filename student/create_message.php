@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,23 +18,21 @@
 				<nav>
 					<div class="nav-center">
   				<span><img src="../img/lspu.png" height="100" width="100" /></span>
-  				<span><div class="left-float"><h1>Laguna State Polytechnic University</h1>
-  				<h2>Siniloan (Host) Campus</h2></div></span>
+  				<span><div class="left-float"><h1>Laguna State Polytechnic University</h1></span>
+  				<h2>Siniloan (Host) Campus</h2></span>
   				</div>
   				</nav>
-
-			</div>
-		</div>
+			    
+			    <div class="year-menu text-center">
+                 <form>
+ 				 <textarea style="margin-left: 0px;" class="comment" placeholder="Write Message..."></textarea>
+         		  <center> <button style="font-weight: bold; font-size: 20px;" class="submit-message btn btn-lg btn-success" type="submit" name="submit-message" >Submit</button></center>
+			</form>
+          </div>
 		</div>
         <div class="back-css">
           <a href="javascript:history.go(-1)" class="btn btn-success">Back</a>
         </div>
-        	<form>
- 				 <textarea class="comment" placeholder="Write Message..."></textarea>
- 				 <a href="create_message.php">
-         		   <button style="font-weight: bold; font-size: 20px;" class="submit-message btn btn-lg btn-success" type="submit" name="submit-message" >Submit</button></a>
-			</form>
-          </div>
 </body>
 </html>
 <script src="../js/bootstrap.js">

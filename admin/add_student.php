@@ -32,7 +32,7 @@
     </div>
     </div>
     <div class="back-css">
-      <a href="index.php" class="btn btn-success">Home</a>
+    <a href="javascript:history.go(-1)" class="btn btn-success">Back</a>
     </div>
     <!-- Update input  -->
       <div class="upd-student">

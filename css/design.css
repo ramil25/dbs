@@ -2,6 +2,7 @@ body
 {
 	background-color: #005080;;
 	color: #fffffe;
+	overflow: unset;
 }
 /* side Navbar */
 .csidebar
@@ -43,8 +44,6 @@ nav .nav-center
 }
 nav
 {
-	left: 0;
-	right: 0;
 	width: 100%;
 	position: absolute;
 	padding: 5px;
@@ -279,7 +278,15 @@ margin-left: 10px;
 font-weight: bold;
 width: 250px;
 }
-
+.year-menu textarea
+{
+text-decoration: none;
+list-style: none;
+font-size: 20px;
+margin-top: 20px;
+margin-left: 5px;
+width: 550px;
+}
 .year-menu ul li button
 {
 text-decoration: none;
@@ -345,7 +352,6 @@ width: 300px;
 	background: #70ad47;
 	outline: none;
 	border: none;
-<<<<<<< HEAD
 }
 
 .comment {
@@ -377,6 +383,7 @@ width: 300px;
  	margin: 4px 2px;
  	cursor: pointer;
  	border-radius: 8px;
+ 	margin-left: 20px;
 }
 
 .submit-message1 {
@@ -437,9 +444,9 @@ width: 300px;
 	position: absolute;
 	top: 395px;
 	left: 385px;
-=======
->>>>>>> d6ed678a431e1957aabd195d438922b7087d6e2c
+
 }
+
 .std-admission-1 button,.std-admission-2 button,.std-admission-3 button
 {
 	font-size: 17px;

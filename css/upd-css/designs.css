@@ -154,11 +154,10 @@ nav h1
 /*  upd-input student css  */
 .upd-student {
 	position: fixed;
-	top: 60%;
+	top: 63%;
 	left: 48%;
 	transform: translate(-50%,-50%);
-	margin-right: 30px;
-	text-align: right;
+	 margin-left: 30px;
 }
 
 .upd-student input
@@ -182,7 +181,7 @@ nav h1
 .upd-student-2
 {
 	position: fixed;
-	top: 56%;
+	top: 53%;
 	left: 70%;
 	transform: translate(-50%,-50%);
 	margin-left: 30px;
@@ -207,7 +206,7 @@ nav h1
 .upd-btn
 {
 	position: fixed;
-	top: 95%;
+	top: 85%;
 	left: 56%;
 	transform: translate(-50%,-50%);
 	font-family: Arial;
@@ -418,7 +417,4 @@ width: 300px;
 	position: absolute;
 	top: 395px;
 	left: 385px;
-=======
->>>>>>> d6ed678a431e1957aabd195d438922b7087d6e2c
 }
-
