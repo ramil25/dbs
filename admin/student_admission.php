@@ -39,7 +39,8 @@
         </div>
         <p class="std-title">STUDENT ADMISSION</p>
           <div class="std-admission-1">
-            <button type="submit" name="student-account" class="btn btn-success" style="margin-bottom: 30px;margin-left:50px;">Add Student</button>
+            <a href="add_student.php">
+            <button type="submit" name="student-account" class="btn btn-success" style="margin-bottom: 30px;margin-left:50px;">Add Student</button></a>
           </div>
           <div class="std-admission-2">
             <button type="submit" name="manage-student-request" class="btn btn-success" style="margin-left: 140px;">Update Student</button>
