@@ -31,9 +31,9 @@
         </div>
         	<form>
         		<h4 class="label"> Name of Student:  </h4>
- 				<input class="input" type="text" id="name"><br><br>
+ 				<input class="input" type="text" id="name" placeholder="Input text here.."><br><br>
  				<h4 class="label label1"> Cause of Counselling:  </h4>
- 				<input class="input input1" type="text" id="cause"><br><br>
+ 				<input class="input input1" type="text" id="cause" placeholder="Input text here.."><br><br>
  				<h4 class="label label2"> Date:  </h4>
  				<input class="input input2" type="date" id="date"><br><br>
  				<h4 class="label label3"> Time:  </h4>
