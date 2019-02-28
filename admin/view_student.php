@@ -23,11 +23,9 @@ $res =mysqli_query($conn,$sql);
 	<div class="row">
 		<div class="col-md-12">
         <nav>
-			<div class="nav-center">
   			<span><img style="display: block;" src="../img/lspu.png" height="100" width="100" /></span>
   				<span><div class="left-float"><h1>Laguna State Polytechnic University</h1>
   				<h2>Siniloan (Host) Campus</h2></div></span>
-  				</div>
   				</nav>
   			    	<h1 style="margin-top: 14%; font-size: 55px; font-weight: bold; font-family: calibri;" class="text-center">VIEW ALL</h1><br>
 <div class="back-css">
@@ -41,7 +39,7 @@ $res =mysqli_query($conn,$sql);
         	while($row=mysqli_fetch_assoc($res))
 			{ ?>
 				<tr>
-					<td><a style="color: black; font-size: 20px;" href="view_student.php?"><?php echo $row['full_name']; ?></a></td>
+					<td><a style="color: black; font-size: 20px;" href="student_profile.php?"><?php echo $row['full_name']; ?></a></td>
 				</tr>
 			<?php } ?>
              	 </table>

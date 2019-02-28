@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 26, 2019 at 11:25 PM
--- Server version: 10.1.36-MariaDB
--- PHP Version: 7.2.11
+-- Generation Time: Feb 28, 2019 at 03:18 PM
+-- Server version: 10.1.28-MariaDB
+-- PHP Version: 7.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `students` (
-  `student_id` varchar(30) NOT NULL,
+  `student_id` int(11) NOT NULL,
   `full_name` varchar(30) NOT NULL,
   `gender` varchar(10) NOT NULL,
   `school_last_attended` varchar(100) NOT NULL,
@@ -52,7 +52,8 @@ CREATE TABLE `students` (
 --
 
 INSERT INTO `students` (`student_id`, `full_name`, `gender`, `school_last_attended`, `strand_course`, `grade_GWA`, `grade_Math`, `grade_English`, `grade_Science`, `fchoice`, `schoice`, `tchoice`, `raw_score`, `remarks`, `date_ad`, `photo_link`) VALUES
-('00000001', 'Dem Soriano', 'Male', 'Laguna Sta Polytechnic University', 'ICT', 89, 88, 75, 80, 'BSIT', 'BSCS', 'BA', 88.9, 'Past', '02/22/2019', '');
+(1, 'Dem Soriano', 'Male', 'Laguna Sta Polytechnic University', 'ICT', 89, 88, 75, 80, 'BSIT', 'BSCS', 'BA', 88.9, 'Past', '02/22/2019', ''),
+(2, 'Aby Serrano', 'Female', 'STI', 'ABM', 77, 77, 78, 89, 'BSBA', 'BSA', 'BSED', 90, 'Past', '02/28/2019', 'gggg');
 
 -- --------------------------------------------------------
 
@@ -95,6 +96,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `students`
+--
+ALTER TABLE `students`
+  MODIFY `student_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `users`

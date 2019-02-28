@@ -6,7 +6,7 @@ body
 /* side Navbar */
 .csidebar
 {
-		background-color: #01041b;
+			background-color: #01041b;
 		padding: 12px;
 		display: block;
 		position: fixed;
@@ -45,9 +45,12 @@ nav
 {
 	left: 0;
 	right: 0;
-	width: 100%;
-	position: absolute;
-	padding: 5px;
+	display: block;
+	margin-left: 30%;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  padding: 4px;
 }
 nav h1
 {
@@ -164,8 +167,8 @@ nav h1
 
 .upd-student input
 {
-  height: 30px;
   width: 220px;
+  font-size: 24px;
     color: #ffffff;
     text-indent: 12px;
 	background: #222a35;
@@ -173,6 +176,7 @@ nav h1
 	border-radius: 5px;
 	border: none;
   float:right;
+  padding: 3px;
 
 }
 .upd-student label
@@ -193,9 +197,10 @@ nav h1
 }
 .upd-student-2 input
 {
-  height: 30px;
   width: 220px;
+  padding: 3px;
   color: #ffffff;
+  font-size: 24px;
   text-indent: 12px;
   	background: #222a35;
 	margin-right: 50px;

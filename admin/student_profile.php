@@ -10,31 +10,23 @@
   <link rel="icon" href="../img/lspu.png">
 </head>
 <body>
-    <div class="row">
-      <div class="col-md-2 col-lg-2 ">
+          </div>
         <div class="csidebar">
           <br><br>
-
-        </div>
-      </div>
-      <div class="col-md-10 col-lg-10">
-        <nav>
-          <span><img src="../img/lspu.png" height="100" width="100" /></span>
+  </div>
+  <nav>
+        <span><img style="display: block;" src="../img/lspu.png" height="100" width="100" /></span>
           <span><div class="left-float"><h1>Laguna State Polytechnic University</h1>
           <h2>Siniloan (Host) Campus</h2></div></span>
           </nav>
-
-      </div>
-    </div>
-    </div>
-    </div>
-    </div>
+  <div class="container">
+    <div class="row">
     <div class="back-css">
     <a href="javascript:history.go(-1)" class="btn btn-success">Back</a>
     </div>
+      <h1 style="margin-top: 14%; font-size: 55px; font-weight: bold; font-family: calibri; text-align: center; width: 100%">Student Profile</h1><br>
     <!-- Update input  -->
-      <div class="upd-student">
-        <form class="form" name="add_student" method="post" action="add_data.php" method="post">
+    <div class="col-md-6 col-lg-6 upd-student">
           <label>Name: </label>
           <input type="text" name="fullname" placeholder="Full Name"><br>
           <label>Gender: </label>
@@ -51,8 +43,9 @@
           <input type="text" name="grade_English" placeholder="Grade"><br>
           <label>Science: </label>
           <input type="text" name="grade_Science" placeholder="Grade"><br>
-        </div>
-        <div class="upd-student-2">
+      </div>
+       <div class="col-md-6 col-lg-6 upd-student-2">
+      
           <label>1st Choice: </label>
           <input type="text" name="fchoice" placeholder="Course"><br>
           <label>2nd Choice: </label>
@@ -63,14 +56,10 @@
           <input type="text" name="raw_score" placeholder="Input Score"><br>
           <label>Remarks: </label>
           <input type="text" name="remarks" placeholder="Remarks Here"><br>
-          <label>Date: </label>
-          <input type="date" name="date_ad" placeholder="Course" style="text-indent: 5px"><br><label>Upload File: </label>
-          <input type="file" name="photo_link" placeholder="Course" style="text-indent: 0px"><br>
-        </div>
-        <div class="upd-btn">
-          <button type="submit" name="submit" class="btn btn-success">Submit</button>
-        </div>
-        </form>
+      </div>
+            
+    </div>
+
 </body>
 </html>
 <script src="../js/bootstrap.js">
