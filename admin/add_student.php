@@ -36,42 +36,41 @@
     </div>
     <!-- Update input  -->
       <div class="upd-student">
-        <form  action="" method="post" >
+        <form class="form" name="add_student" method="post" action="add_data.php" method="post">
           <label>Name: </label>
-          <input type="text" name="name" placeholder="Full Name"><br>
+          <input type="text" name="fullname" placeholder="Full Name"><br>
           <label>Gender: </label>
-          <input type="text" name="usn" placeholder="Gender"><br>
+          <input type="text" name="gender" placeholder="Gender"><br>
           <label>Last School Attended: </label>
-          <input type="text" name="current-pwd" placeholder="School Name"><br>
+          <input type="text" name="school_last_attended" placeholder="School Name"><br>
           <label>Strand / Course: </label>
-          <input type="text" name="new-pwd" placeholder="Enter Student Strand" ><br>
+          <input type="text" name="strand_course" placeholder="Enter Student Strand" ><br>
           <label>GWA: </label>
-          <input type="text" name="confirm-new-pwd" placeholder="Grade"><br>
+          <input type="text" name="grade_GWA" placeholder="Grade"><br>
           <label>Math: </label>
-          <input type="text" name="confirm-new-pwd" placeholder="Grade"><br>
+          <input type="text" name="grade_Math" placeholder="Grade"><br>
           <label>English: </label>
-          <input type="text" name="confirm-new-pwd" placeholder="Grade"><br>
+          <input type="text" name="grade_English" placeholder="Grade"><br>
           <label>Science: </label>
-          <input type="text" name="confirm-new-pwd" placeholder="Grade"><br>
+          <input type="text" name="grade_Science" placeholder="Grade"><br>
         </div>
         <div class="upd-student-2">
           <label>1st Choice: </label>
-          <input type="text" name="confirm-new-pwd" placeholder="Course"><br>
+          <input type="text" name="fchoice" placeholder="Course"><br>
           <label>2nd Choice: </label>
-          <input type="text" name="confirm-new-pwd" placeholder="Course"><br>
+          <input type="text" name="schoice" placeholder="Course"><br>
           <label>3rd Choice: </label>
-          <input type="text" name="confirm-new-pwd" placeholder="Course"><br>
+          <input type="text" name="tchoice" placeholder="Course"><br>
           <label>Raw Score: </label>
-          <input type="text" name="confirm-new-pwd" placeholder="Input Score"><br>
+          <input type="text" name="raw_score" placeholder="Input Score"><br>
           <label>Remarks: </label>
-          <input type="text" name="confirm-new-pwd" placeholder="Remarks Here"><br>
+          <input type="text" name="remarks" placeholder="Remarks Here"><br>
           <label>Date: </label>
-          <input type="date" name="confirm-new-pwd" placeholder="Course"><br><label>Upload File: </label>
-          <input type="file" name="confirm-new-pwd" placeholder="Course"><br>
+          <input type="date" name="date_ad" placeholder="Course" style="text-indent: 5px"><br><label>Upload File: </label>
+          <input type="file" name="photo_link" placeholder="Course" style="text-indent: 0px"><br>
         </div>
-        <!-- update-btn  -->
         <div class="upd-btn">
-          <button type="submit" name="upd-btn" class="btn btn-success">Create</button>
+          <button type="submit" name="submit" class="btn btn-success">Submit</button>
         </div>
         </form>
 </body>
