@@ -1,5 +1,11 @@
 <?php
-
+$sid =$_GET['std_id'];
+$conn = mysqli_connect('localhost','root','','databank');
+if($conn)
+{
+  $sql ="SELECT * FROM students WHERE student_id=".$sid;
+  $result =mysqli_query($conn,$sql);
+  $fetch  =mysqli_fetch_assoc($result);
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,38 +34,38 @@
     <!-- Update input  -->
     <div class="col-md-6 col-lg-6 upd-student">
           <label>Name: </label>
-          <input type="text" name="fullname" placeholder="Full Name"><br>
+          <input type="text" name="fullname" value="<?php echo $fetch['full_name']; ?>" disabled><br>
           <label>Gender: </label>
-          <input type="text" name="gender" placeholder="Gender"><br>
+          <input type="text" name="gender" value="<?php echo $fetch['gender']; ?>" disabled><br>
           <label>Last School Attended: </label>
-          <input type="text" name="school_last_attended" placeholder="School Name"><br>
+          <input type="text" name="school_last_attended" value="<?php echo $fetch['school_last_attended']; ?>" disabled><br>
           <label>Strand / Course: </label>
-          <input type="text" name="strand_course" placeholder="Enter Student Strand" ><br>
+          <input type="text" name="strand_course" value="<?php echo $fetch['strand_course']; ?>" disabled><br>
           <label>GWA: </label>
-          <input type="text" name="grade_GWA" placeholder="Grade"><br>
+          <input type="text" name="grade_GWA" value="<?php echo $fetch['grade_GWA']; ?>" disabled><br>
           <label>Math: </label>
-          <input type="text" name="grade_Math" placeholder="Grade"><br>
+          <input type="text" name="grade_Math" value="<?php echo $fetch['grade_Math']; ?>" disabled><br>
           <label>English: </label>
-          <input type="text" name="grade_English" placeholder="Grade"><br>
+          <input type="text" name="grade_English" value="<?php echo $fetch['grade_English']; ?>" disabled><br>
           <label>Science: </label>
-          <input type="text" name="grade_Science" placeholder="Grade"><br>
+          <input type="text" name="grade_Science" value="<?php echo $fetch['grade_Science']; ?>" disabled><br>
       </div>
        <div class="col-md-6 col-lg-6 upd-student-2">
       
           <label>1st Choice: </label>
-          <input type="text" name="fchoice" placeholder="Course"><br>
+          <input type="text" name="fchoice" value="<?php echo $fetch['fchoice']; ?>" disabled><br>
           <label>2nd Choice: </label>
-          <input type="text" name="schoice" placeholder="Course"><br>
+          <input type="text" name="schoice" value="<?php echo$fetch['schoice']; ?>" disabled><br>
           <label>3rd Choice: </label>
-          <input type="text" name="tchoice" placeholder="Course"><br>
+          <input type="text" name="tchoice" value="<?php echo $fetch['tchoice']; ?>" disabled><br>
           <label>Raw Score: </label>
-          <input type="text" name="raw_score" placeholder="Input Score"><br>
+          <input type="text" name="raw_score" value="<?php echo $fetch['raw_score']; ?>" disabled><br>
           <label>Remarks: </label>
-          <input type="text" name="remarks" placeholder="Remarks Here"><br>
+          <input type="text" name="remarks" value="<?php echo $fetch['remarks']; ?>" disabled><br>
       </div>
             
     </div>
-
+<?php } ?>
 </body>
 </html>
 <script src="../js/bootstrap.js">

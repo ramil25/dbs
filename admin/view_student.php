@@ -39,7 +39,7 @@ $res =mysqli_query($conn,$sql);
         	while($row=mysqli_fetch_assoc($res))
 			{ ?>
 				<tr>
-					<td><a style="color: black; font-size: 20px;" href="student_profile.php?"><?php echo $row['full_name']; ?></a></td>
+					<td><a style="color: black; font-size: 20px;" href=<?php echo "student_profile.php?std_id=".$row['student_id']; ?>><?php echo $row['full_name']; ?></a></td>
 				</tr>
 			<?php } ?>
              	 </table>
