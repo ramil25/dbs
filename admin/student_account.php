@@ -26,9 +26,6 @@
 			</div>
 		</div>
 		</div>
-        <div class="back-css">
-          <a href="javascript:history.go(-1)" class="btn btn-success">Back</a>
-        </div>
         <div class="search-bar">
           <input type="text" name="search" class="form-control" placeholder="Search...">
         </div>

@@ -26,9 +26,6 @@
 			</div>
 		</div>
 		</div>
-        <div class="back-css">
-          <a href="javascript:history.go(-1)" class="btn btn-success">Back</a>
-        </div>
         	<form>
         		<h4 class="label"> Name of Student:  </h4>
  				<input class="input" type="text" id="name" placeholder="Input text here.."><br><br>

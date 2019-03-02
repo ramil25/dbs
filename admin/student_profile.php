@@ -27,9 +27,6 @@ if($conn)
           </nav>
   <div class="container">
     <div class="row">
-    <div class="back-css">
-    <a href="javascript:history.go(-1)" class="btn btn-success">Back</a>
-    </div>
       <h1 style="margin-top: 14%; font-size: 55px; font-weight: bold; font-family: calibri; text-align: center; width: 100%">Student Profile</h1><br>
     <!-- Update input  -->
     <div class="col-md-6 col-lg-6 upd-student">

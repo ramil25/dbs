@@ -53,9 +53,6 @@ $noResult = '';
     </div>
     </div><section>
         <form method="POST">
-        <div class="back-css">
-          <a href="javascript:history.go(-1)" class="btn btn-success">Back</a>
-        </div>
         <div class="search-bar">
           <div class="container">
           <input type="text" name="search" class="form-control" placeholder="Search..." name="search" required>
@@ -97,9 +94,6 @@ $noResult = '';
 		</div>
 		</div><section>
         <form method="POST">
-        <div class="back-css">
-          <a href="javascript:history.go(-1)" class="btn btn-success">Back</a>
-        </div>
         <div class="search-bar">
           <div class="container">
           <input type="text" name="search" class="form-control" placeholder="Search..." name="search" required>

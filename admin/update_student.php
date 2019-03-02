@@ -38,9 +38,6 @@
         <a type="file" href="#">Edit photo</a>
     </div>
     <p class="std-name">Student Name</p>
-    <div class="back-css">
-      <a href="index.php" class="btn btn-success">Home</a>
-    </div>
     <!-- Update input  -->
       <div class="upd-student">
         <form  action="" method="post" >

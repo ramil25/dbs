@@ -26,9 +26,6 @@
 			</div>
 		</div>
 		</div>
-        <div class="back-css">
-          <a href="javascript:history.go(-1)" class="btn btn-success">Back</a>
-        </div>
         <p class="std-title">Manage Student Request</p>
           <div class="std-request-1">
             <button type="submit" name="student-account" style="margin-bottom: 30px;margin-left:50px;">Schedule of Video/Personel Counseling</button>

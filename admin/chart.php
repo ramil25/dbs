@@ -41,9 +41,6 @@ $sem =$_GET['sem'];
 				<div class="pie-label">
 
 				</div>
-        <div class="css-back">
-           <a href="javascript:history.go(-1)" class="btn btn-success">Back</a>
-        </div>
 
 
 </body>

@@ -29,9 +29,6 @@
     </div>
     </div>
     </div>
-    <div class="back-css">
-    <a href="javascript:history.go(-1)" class="btn btn-success">Back</a>
-    </div>
     <!-- Update input  -->
       <div class="upd-student">
         <form class="form" name="add_student" method="post" action="add_data.php" method="post">

@@ -28,9 +28,6 @@ $res =mysqli_query($conn,$sql);
   				<h2>Siniloan (Host) Campus</h2></div></span>
   				</nav>
   			    	<h1 style="margin-top: 14%; font-size: 55px; font-weight: bold; font-family: calibri;" class="text-center">VIEW ALL</h1><br>
-<div class="back-css">
-          <a href="javascript:history.go(-1)" class="btn btn-success">Back</a>
-        </div>
         <div class="search-bar" style="margin-left: 10%;">
           <input type="text" name="search" class="form-control" placeholder="Search...">
         </div>

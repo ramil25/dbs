@@ -7,25 +7,19 @@
 	<link rel="icon" href="../img/lspu.png">
 </head>
 <body>
+    <div class="csidebar">
+          <br><br>
+
+        </div>
+  <nav>
+        <span><img style="display: block;" src="../img/lspu.png" height="100" width="100" /></span>
+          <span><div class="left-float"><h1>Laguna State Polytechnic University</h1>
+          <h2>Siniloan (Host) Campus</h2></div></span>
+          </nav>
+          <div class="container">
 		<div class="row">
-			<div class="col-md-2 col-lg-2 ">
-				<div class="csidebar">
-					<br><br>
+			<div class="col-md-12 col-lg-12">
 
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-10">
-				<nav>
-					<div class="nav-center">
-  				<span><img src="../img/lspu.png" height="100" width="100" /></span>
-  				<span><div class="left-float"><h1>Laguna State Polytechnic University</h1>
-  				<h2>Siniloan (Host) Campus</h2></div></span>
-  				</div>
-  				</nav>
-
-			</div>
-		</div>
-		</div>
     <!-- EDIT PHOTO AVATAR -->
     <div class="avatar">
      <button style="background-color: transparent; border: none;" type="File"><img src="../img/default.png" alt="your-photo" /></button>
@@ -35,9 +29,6 @@
         <a type="file" href="#">Edit photo</a>
     </div>
     <p class="std-name">Admin Name</p>
-    <div class="back-css">
-      <a href="Profile.php" class="btn btn-success">Back</a>
-    </div>
     <!-- Update input  -->
       <div class="upd-student">
         <form  action="" method="post" >
@@ -63,6 +54,10 @@
           <button type="submit" name="upd-btn" class="btn btn-success">Update</button>
         </div>
         </form>
+          </div>
+    </div>
+  </div>
+
 </body>
 </html>
 <script src="../js/bootstrap.js">

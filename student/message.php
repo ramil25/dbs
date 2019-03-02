@@ -26,9 +26,6 @@
 			</div>
 		</div>
 		</div>
-        <div class="back-css">
-          <a href="index.php" class="btn btn-success" >Home</a>
-        </div>
 
           <div class="manage-btn">
           	<a href="create_message.php">

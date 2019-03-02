@@ -30,9 +30,6 @@
 			</form>
           </div>
 		</div>
-        <div class="back-css">
-          <a href="javascript:history.go(-1)" class="btn btn-success">Back</a>
-        </div>
 </body>
 </html>
 <script src="../js/bootstrap.js">
