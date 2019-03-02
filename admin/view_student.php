@@ -2,6 +2,7 @@
 $conn = mysqli_connect('localhost','root','','databank');
 if($conn)
 {
+$title= $_GET['title'];
 $sql ="SELECT * from students";
 $res =mysqli_query($conn,$sql);
 ?>
@@ -12,7 +13,7 @@ $res =mysqli_query($conn,$sql);
   <link rel="stylesheet" href="../css/bootstrap.css">
   <link rel="stylesheet"  href="../css/upd-css/designs.css">
   <link rel="icon" href="../img/lspu.png">
-	<title>View Students</title>
+	<title><?php echo $title; ?></title>
 </head>
 <body>
 <div class="csidebar">
@@ -27,7 +28,7 @@ $res =mysqli_query($conn,$sql);
   				<span><div class="left-float"><h1>Laguna State Polytechnic University</h1>
   				<h2>Siniloan (Host) Campus</h2></div></span>
   				</nav>
-  			    	<h1 style="margin-top: 14%; font-size: 55px; font-weight: bold; font-family: calibri;" class="text-center">VIEW ALL</h1><br>
+  			    	<h1 style="margin-top: 14%; font-size: 55px; font-weight: bold; font-family: calibri;" class="text-center"><?php echo $title; ?></h1><br>
         <div class="search-bar" style="margin-left: 10%;">
           <input type="text" name="search" class="form-control" placeholder="Search...">
         </div>
@@ -36,7 +37,17 @@ $res =mysqli_query($conn,$sql);
         	while($row=mysqli_fetch_assoc($res))
 			{ ?>
 				<tr>
-					<td><a style="color: black; font-size: 20px;" href=<?php echo "student_profile.php?std_id=".$row['student_id']; ?>><?php echo $row['full_name']; ?></a></td>
+					<td><a style="color: black; font-size: 20px;" href=<?php
+
+          if($title=="VIEW ALL")
+          {
+           echo "student_profile.php?std_id=".$row['student_id']; ?>><?php echo $row['full_name'];
+           }
+          else
+          {
+            echo "update_student.php?std_id=".$row['student_id']; ?>><?php echo $row['full_name'];
+          }
+            ?></a></td>
 				</tr>
 			<?php } ?>
              	 </table>

@@ -112,7 +112,7 @@ $noResult = '';
             <button type="submit" name="student-account" class="btn btn-success" style="margin-bottom: 30px;margin-left:50px;">Add Student</button></a>
           </div>
           <div class="std-admission-2">
-            <button type="submit" name="manage-student-request" class="btn btn-success" style="margin-left: 140px;">Update Student</button>
+            <button onclick="location.href='view_student.php?title=Select or search student to update'" type="submit" name="manage-student-request" class="btn btn-success" style="margin-left: 140px;">Update Student</button>
           </div>
           <div class="std-admission-3">
             <button onclick="location.href='view_student.php?title=VIEW ALL'" type="submit" name="manage-student-request" class="btn btn-success" style="margin-left: 140px;">View All</button>
