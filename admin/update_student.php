@@ -10,7 +10,7 @@ if($conn)
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Add Student</title>
+  <title>Update Student</title>
   <link rel="stylesheet" href="../css/bootstrap.css">
   <link rel="stylesheet"  href="../css/upd-css/designs.css">
   <link rel="icon" href="../img/lspu.png">
