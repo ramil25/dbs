@@ -1,26 +1,6 @@
 <?php 
-
-$showResult = '';
-$noResult = '';
-  if (isset($_POST["submit-search"])) {
-    require '../db.php';
-    $search = $_POST["search"];
-    $sql = "SELECT * FROM students WHERE full_name LIKE '%$search%' OR strand_course LIKE '%$search%'";
-    $result = mysqli_query($conn,$sql);
-    $query = mysqli_num_rows($result);
-
-    if ($query > 0) {
-      while ($row = mysqli_fetch_assoc($result)) {
-         
-            $showResult .= "<p style='position:fixed;top:45%;left:50%;'>About ".$query." result(s)!</p><h3 style='position:fixed;top:50%;left:50%;color:#000;'><a href='student_profile.php?std_id=".$row['student_id']."' style='color:#000;background-color: #ffffff;width:30%;'>".$row['full_name']."</a></h3>";
-      }
-    }
-    else
-    {
-      $noResult .= "<p style='position:fixed;top:45%;left:50%;'>No results found!</p>";
-    }
-
-  }
+/* CSS is not fix yet */
+/* CSS is not fix yet */
   if (isset($_GET['result'])) {
     echo'
    <!DOCTYPE html>
@@ -67,46 +47,70 @@ $noResult = '';
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Manage Student</title>
-	<link rel="stylesheet" href="../css/bootstrap.css">
-	<link rel="stylesheet"  href="../css/upd-css/designs(2).css">
+  <title>Manage Student</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet"  href="../css/upd-css/designs(2).css">
   <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css">
-	<link rel="icon" href="../img/lspu.png">
+  <link rel="icon" href="../img/lspu.png">
 </head>
 <body>
-		<div class="row">
-			<div class="col-md-2 col-lg-2 ">
-				<div class="csidebar">
-					<br><br>
+    <div class="row">
+      <div class="col-md-2 col-lg-2 ">
+        <div class="csidebar">
+          <br><br>
 
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-10">
-				<nav>
-					<div class="nav-center">
-  				<span><img src="../img/lspu.png" height="100" width="100" /></span>
-  				<span><div class="left-float"><h1>Laguna State Polytechnic University</h1>
-  				<h2>Siniloan (Host) Campus</h2></div></span>
-  				</div>
-  				</nav>
+        </div>
+      </div>
+      <div class="col-md-10 col-lg-10">
+        <nav>
+          <div class="nav-center">
+          <span><img src="../img/lspu.png" height="100" width="100" /></span>
+          <span><div class="left-float"><h1>Laguna State Polytechnic University</h1>
+          <h2>Siniloan (Host) Campus</h2></div></span>
+          </div>
+          </nav>
 
-			</div>
-		</div>
-		</div><section>
+      </div>
+    </div>
+    </div><section>
         <form method="POST">
         <div class="search-bar">
           <div class="container">
-          <input type="text" name="search" class="form-control" placeholder="Search..." name="search" required>
+          <input type="text" name="search" class="form-control" placeholder="Search..." name="search" required style="margin-bottom: 40px;margin-top: 120px;">
+           <button type="submit" name="submit-search" class="std-admission-1" style="left:50px;">Search</button>
+          <?php
+            
+    $conn = mysqli_connect('localhost','robert','admin','databank');
+    if(isset($_POST['submit-search'])) {
+    $search = $_POST["search"];
+    $sql = "SELECT * FROM students WHERE full_name LIKE '%$search%' OR strand_course LIKE '%$search%'";
+    $result = mysqli_query($conn,$sql);
+    $checkResult = mysqli_num_rows($result);
+
+    echo "  About ".$checkResult." result(s)!";
+    if ($checkResult > 0) {
+      while ($row = mysqli_fetch_assoc($result)) {
+
+            $fname = $row['full_name'];
+            $std_id = $row['student_id'];
+            
+        echo"   <h5 style='background:#ffffff;'><a href='student_profile.php?std_id=".$std_id."'>".$fname."</a></h5>
+            </tr>
+            </table>";
+      }
+    }
+
+  }
+  ?>
         </div>
         </div>
         <div class="search-container">
-          <button type="submit" name="submit-search"><i class="fa fa-search"></i></button>
           </form>
         </div>
 
           </section>
         <article>
-        <p class="std-title">STUDENT ADMISSION</p>
+        <p class="std-title">STUDENT ADMISSION</p><br>
           <div class="std-admission-1">
             <a href="add_student.php?title=ADD STUDENT">
             <button type="submit" name="student-account" class="btn btn-success" style="margin-bottom: 30px;margin-left:50px;">Add Student</button></a>
@@ -117,8 +121,7 @@ $noResult = '';
           <div class="std-admission-3">
             <button onclick="location.href='view_student.php?title=VIEW ALL'" type="submit" name="manage-student-request" class="btn btn-success" style="margin-left: 140px;">View All</button>
           </div>
-          <?php echo $showResult; ?>
-          <?php echo $noResult; ?>
+         
           </article>
 </body>
 </html>
