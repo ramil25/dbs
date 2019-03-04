@@ -1,7 +1,10 @@
 body
 {
-	background-color: #005080;;
+	background-color: #005080;
 	color: #fffffe;
+	width: 100%;
+	left: 0;
+	right: 0;
 }
 .csidebar
 {
@@ -27,32 +30,7 @@ body
 	border-radius: 100px;
 	display: block;
 }
-nav span
-{
-	display: block;
-	float: left;
-	text-align: center;
-	align-content: center;
-	align-items: center;
-	align-self: center;
 
-}
-nav .nav-center
-{
-	margin-left: 20%;
-}
-nav
-{
-	width: 100%;
-	position: absolute;
-	border-bottom: 1px solid white;
-	padding: 5px;
-	position: fixed;
-}
-nav h1
-{
-	font-family: "Times new Roman", Times, serif;
-}
 #btn-vertical
 {
 	margin-top: 200px;

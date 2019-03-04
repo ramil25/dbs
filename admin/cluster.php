@@ -32,14 +32,14 @@ $year=$_GET['year'];
   				<div class="cluster-title">
             <h1 class="text-center">CLUSTER</h1><br>
             	<div class="cluster-menu text-center">
-            		<a class="btn btn-lg btn-success" href="#">CBMA</a>
-            		<a class="btn btn-lg btn-success" href="#">CCJE</a>
-            		<a class="btn btn-lg btn-success" href="#">CTE</a>
-            		<a  class="btn btn-lg btn-success" href="#">IAE</a>
-            		<a class="btn btn-lg btn-success" href="#">CCS</a>
-            		<a class="btn btn-lg btn-success" href="#">CA</a>
-            		<a class="btn btn-lg btn-success" href="#">CAS</a>
-            		<a class="btn btn-lg btn-success" href="#">CHMT</a>
+            		<a class="btn btn-lg btn-success" href="view_cluster.php?title=CBMA&&year=2019">CBMA</a>
+            		<a class="btn btn-lg btn-success" href="view_cluster.php?title=CCJE&year=2019">CCJE</a>
+            		<a class="btn btn-lg btn-success" href="view_cluster.php?title=CTE&year=2019">CTE</a>
+            		<a  class="btn btn-lg btn-success" href="view_cluster.php?title=IAE&year=2019">IAE</a>
+            		<a class="btn btn-lg btn-success" href="view_cluster.php?title=CCS&year=2019">CCS</a>
+            		<a class="btn btn-lg btn-success" href="view_cluster.php?title=CA&year=2019">CA</a>
+            		<a class="btn btn-lg btn-success" href="view_cluster.php?title=CAS&year=2019">CAS</a>
+            		<a class="btn btn-lg btn-success" href="view_cluster.php?title=CHMT&year=2019">CHMT</a>
             	</div>
           </div>
 			</div>
@@ -51,4 +51,3 @@ $year=$_GET['year'];
 <script src="../js/bootstrap.js">
 
 </script>
-?>

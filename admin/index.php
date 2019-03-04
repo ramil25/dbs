@@ -3,26 +3,26 @@
 <head>
 	<title>Welcome</title>
 	<link rel="stylesheet" href="../css/bootstrap.css">
-	<link rel="stylesheet"  href="../css/custom.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet"  href="../css/custom.css">
 	<link rel="icon" href="../img/lspu.png">
 </head>
 <body>
-	
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-lg-12">
-				<nav>
-					<div class="nav-center">
-  				<span><img src="../img/lspu.png" height="100" width="100" /></span>
-  				<span><div class="left-float"><h1>Laguna State Polytechnic University</h1>
-  				<h2>Siniloan (Host) Campus</h2></div></span>
-  				</div>
+        <div class="container-fluid">
+				<nav class="navbar navbar-expand-lg" style="width: 100%; text-align: center; display: block; font-family: Times New Roman">
+  				<span style="float: left;"><img src="../img/lspu.png" height="100" width="100" /></span>
+  				<div><h1>Laguna State Polytechnic University</h1>
+  				<h2>Siniloan (Host) Campus</h2></div>
   				</nav>
-				<h1 style="margin-top: 110px; text-align: right;">Welcome Admin!!</h1>
-				
+        </div>
+        <h2 style="float: right;">Welcome Admin</h2>
 			</div>
+
 		</div>
-	</div>
+		</div>
 	<div class="csidebar">
 					<br><br>
 					<h4>Profile</h4>

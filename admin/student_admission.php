@@ -80,7 +80,7 @@
            <button type="submit" name="submit-search" class="std-admission-1" style="left:50px;">Search</button>
           <?php
             
-    $conn = mysqli_connect('localhost','robert','admin','databank');
+    require '../db.php';
     if(isset($_POST['submit-search'])) {
     $search = $_POST["search"];
     $sql = "SELECT * FROM students WHERE full_name LIKE '%$search%' OR strand_course LIKE '%$search%'";
