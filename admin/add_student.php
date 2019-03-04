@@ -32,32 +32,23 @@ if(isset($_POST['add-std']))
 <head>
   <title>Add Student</title>
   <link rel="stylesheet" href="../css/bootstrap.css">
-  <link rel="stylesheet"  href="../css/upd-css/designs.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet"  href="../css/custom.css">
   <link rel="icon" href="../img/lspu.png">
 </head>
 <body>
-    <div class="row">
-      <div class="col-md-2 col-lg-2 ">
-        <div class="csidebar">
-          <br><br>
-
-        </div>
-      </div>
-      <div class="col-md-10 col-lg-10">
-        <nav>
-          <span><img src="../img/lspu.png" height="100" width="100" /></span>
-          <span><div class="left-float"><h1>Laguna State Polytechnic University</h1>
-          <h2>Siniloan (Host) Campus</h2></div></span>
+  <form class="form" name="add_student" method="post">
+    <div class="container">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg" style="width: 100%; text-align: center; display: block; font-family: Times New Roman;background-color: #005080;">
+          <span style="float: left; padding-left:200px;"><img src="../img/lspu.png" height="100" width="100" /></span>
+          <div style="text-align: center;"><h1>Laguna State Polytechnic University</h1>
+          <h2>Siniloan (Host) Campus</h2></div>
           </nav>
-           <h1 style="margin-top: 14%; font-size: 55px; font-weight: bold; font-family: calibri; text-align: center; width: 100%"><?php echo $title; ?></h1><br>
-      </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <!-- Update input  -->
-      <div class="upd-student">
-        <form class="form" name="add_student" method="post">
+        </div>
+        <h1  style="margin-top:5%; font-size: 30px; text-align: center;">ADD STUDENT</h1>
+    <div class="row">
+      <div class="col-md-6 col-lg-6 upd-student">
           <label>Name: </label>
           <input type="text" name="fullname" placeholder="Full Name" required><br>
           <label>Gender: </label>
@@ -75,7 +66,7 @@ if(isset($_POST['add-std']))
           <label>Science: </label>
           <input type="text" name="grade_Science" placeholder="Grade" required><br>
         </div>
-        <div class="upd-student-2">
+        <div class="col col-md-6 col-lg-6 upd-student-2">
           <label>1st Choice: </label>
           <input type="text" name="fchoice" placeholder="Course" required><br>
           <label>2nd Choice: </label>
@@ -134,7 +125,6 @@ if(isset($_POST['add-std']))
          <option value="30">30</option>
          <option value="31">31</option>
        </select>
-       </select>
           <select name="month">
             <option value="June">June</option>
             <option value="July">July</option>
@@ -152,10 +142,15 @@ if(isset($_POST['add-std']))
           <br><label>Upload File: </label>
           <input type="file" name="photo_link" placeholder="Course" style="text-indent: 0px"><br>
         </div>
-        <div class="upd-btn">
-          <button type="submit" name="add-std" class="btn btn-success">Add</button>
+        </div>
+        <div class="upd-btn" style="text-align: center; margin-top: 50px;">
+          <button type="submit" name="add-std" class="btn btn-success btn-lg">Add</button>
+        </div>
         </div>
         </form>
+        
+       
+      
 </body>
 </html>
 <script src="../js/bootstrap.js">

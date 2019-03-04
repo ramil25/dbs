@@ -13,8 +13,8 @@
 			<div class="col-md-12 col-lg-12">
         <div class="container-fluid">
 				<nav class="navbar navbar-expand-lg" style="width: 100%; text-align: center; display: block; font-family: Times New Roman">
-  				<span style="float: left;"><img src="../img/lspu.png" height="100" width="100" /></span>
-  				<div><h1>Laguna State Polytechnic University</h1>
+  				<span style="float: left; padding-left:200px;"><img src="../img/lspu.png" height="100" width="100" /></span>
+  				<div style="text-align: center;"><h1>Laguna State Polytechnic University</h1>
   				<h2>Siniloan (Host) Campus</h2></div>
   				</nav>
         </div>

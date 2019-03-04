@@ -8,13 +8,70 @@ $c2='';
 $c3='';
 if(isset($_GET['title']))
 {
-  if($title=="CCS")
+  if($title=="CA")
+  {
+    $c1='BSA';
+    $c2='BAT';
+    $c3='BSAgEd';
+    $c4='BSAB';
+    $sql ="SELECT * from students WHERE (fchoice='".$c1."' OR fchoice='".$c2."' OR fchoice='".$c3."' OR fchoice='".$c4."') AND (remarks='Qualified' OR remarks='qualified')";
+  }
+  else if($title=="CCS")
   {
     $c1='BSIT';
     $c2='BSCS';
     $c3='BSIS';
+    $c4='ACT';
+    $sql ="SELECT * from students WHERE (fchoice='".$c1."' OR fchoice='".$c2."' OR fchoice='".$c3."' OR fchoice='".$c4."') AND (remarks='Qualified' OR remarks='qualified')";
   }
-  $sql ="SELECT * from students WHERE fchoice='".$c1."' OR fchoice='".$c2."' OR fchoice='".$c3."'";
+  else if($title=="CHMT")
+  {
+    $c1='DHRM';
+    $c2='BSHRM';
+    $c3='BS Tourism';
+    $c4='';
+    $sql ="SELECT * from students WHERE (fchoice='".$c1."' OR fchoice='".$c2."' OR fchoice='".$c3."' OR fchoice='".$c4."') AND (remarks='Qualified' OR remarks='qualified')";
+  }
+  else if($title=="CCJE")
+  {
+    $c1='BSCrim';
+    $c2='';
+    $c3='';
+    $c4='';
+    $sql ="SELECT * from students WHERE (fchoice='".$c1."' OR fchoice='".$c2."' OR fchoice='".$c3."' OR fchoice='".$c4."') AND (remarks='Qualified' OR remarks='qualified')";
+  }
+  else if($title=="IAE")
+  {
+    $c1='BSAgEng';
+    $c2='';
+    $c3='';
+    $c4='';
+    $sql ="SELECT * from students WHERE (fchoice='".$c1."' OR fchoice='".$c2."' OR fchoice='".$c3."' OR fchoice='".$c4."') AND (remarks='Qualified' OR remarks='qualified')";
+  }
+  else if($title=="CTE")
+  {
+    $c1='BSEd';
+    $c2='BEED';
+    $c3='';
+    $c4='';
+    $sql ="SELECT * from students WHERE (fchoice='".$c1."' OR fchoice='".$c2."' OR fchoice='".$c3."' OR fchoice='".$c4."') AND (remarks='Qualified' OR remarks='qualified')";
+  }
+  else if($title=="CBMA")
+  {
+    $c1='BSBA';
+    $c2='BSAccountancy';
+    $c3='BSOA';
+    $c4='ACS';
+    $sql ="SELECT * from students WHERE (fchoice='".$c1."' OR fchoice='".$c2."' OR fchoice='".$c3."' OR fchoice='".$c4."') AND (remarks='Qualified' OR remarks='qualified')";
+  }
+  else if($title=="CAS")
+  {
+    $c1='BSP';
+    $c2='BS Food Tech';
+    $c3='';
+    $c4='';
+    $sql ="SELECT * from students WHERE (fchoice='".$c1."' OR fchoice='".$c2."' OR fchoice='".$c3."' OR fchoice='".$c4."') AND (remarks='Qualified' OR remarks='qualified')";
+  }
 $res =mysqli_query($conn,$sql);
 
 ?>
@@ -32,11 +89,11 @@ $res =mysqli_query($conn,$sql);
 		<div class="row">
 			<div class="col-md-12 col-lg-12">
         <div class="container-fluid">
-				<nav class="navbar navbar-expand-lg" style="width: 100%; text-align: center; display: block; font-family: Times New Roman">
-  				<span style="float: left;"><img src="../img/lspu.png" height="100" width="100" /></span>
-  				<div><h1>Laguna State Polytechnic University</h1>
-  				<h2>Siniloan (Host) Campus</h2></div>
-  				</nav>
+        <nav class="navbar navbar-expand-lg" style="width: 100%; text-align: center; display: block; font-family: Times New Roman">
+          <span style="float: left; padding-left:150px;"><img src="../img/lspu.png" height="100" width="100" /></span>
+          <div style="text-align: center;"><h1>Laguna State Polytechnic University</h1>
+          <h2>Siniloan (Host) Campus</h2></div>
+          </nav>
         </div>
         <h1 style="text-align: center; font-size: 40px; margin-top: 10px;"><?php echo $title; ?></h1><br>
         <table style="margin-top: 20px; border-color: black; background-color: white; color: black;" class="table">
