@@ -3,29 +3,30 @@
 <head>
 	<title>Profile</title>
 	<link rel="stylesheet" href="../css/bootstrap.css">
-	<link rel="stylesheet"  href="../css/custom.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet"  href="../css/custom.css">
 	<link rel="icon" href="../img/lspu.png">
 </head>
 <body>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-lg-12">
-				<nav>
-					<div class="nav-center">
-  				<span><img src="../img/lspu.png" height="100" width="100" /></span>
-  				<span><div class="left-float"><h1>Laguna State Polytechnic University</h1>
-  				<h2>Siniloan (Host) Campus</h2></div></span>
-  				</div>
+				<nav class="navbar navbar-expand-lg" style="width: 100%; text-align: center; display: block; font-family: Times New Roman">
+  				<span style="float: left; padding-left:200px;"><img src="../img/lspu.png" height="100" width="100" /></span>
+  				<div style="text-align: center;"><h1>Laguna State Polytechnic University</h1>
+  				<h2>Siniloan (Host) Campus</h2></div>
   				</nav>
-				<div id="btn-vertical">
-					<ul class="pull-left" style="margin-left: 20%;">
+        <div id="btn-vertical">
+					<ul class="pull-left mt-10">
 					<li><a href="update_profile.php" class="btn btn-success btn-lg">Edit Profile</a></li>
-					<li><a href="#" class=" btn btn-success btn-lg">Message</a></li>
+					<li><a href="#" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-envelope">Message</span></a></li>
 				</ul>
 				</div>
 			</div>
+
 		</div>
-	</div>
+		</div>
+
 		<div class="csidebar">
 					<br><br>
 					<h4>Profile</h4>
