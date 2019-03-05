@@ -9,7 +9,6 @@ $res =mysqli_query($conn,$sql);
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Update Student Profile</title>
   <link rel="stylesheet" href="../css/bootstrap.css">
   <link rel="stylesheet"  href="../css/upd-css/designs.css">
   <link rel="icon" href="../img/lspu.png">

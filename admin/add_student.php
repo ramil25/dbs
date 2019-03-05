@@ -17,7 +17,7 @@ if(isset($_POST['add-std']))
   $rs =$_POST['raw_score'];
   $rem =$_POST['remarks'];
   $date=$_POST['month']."/".$_POST['day']."/".$_POST['year'];
-  $addsql ="INSERT INTO students(full_name,gender,school_last_attended,strand_course,grade_GWA,grade_Math,grade_English,grade_Science,fchoice,schoice,tchoice,raw_score,remarks,date_ad) VALUES ('".$fn."','".$gender."','".$lsa."','".$sc."',".$gwa.",".$math.",".$eng.",".$scie.",'".$fchoice."','".$schoice."','".$tchoice."','".$rs."','".$rem."','".$date."')";
+  $addsql ="INSERT INTO students(full_name,gender,school_last_attended,strand_course,grade_GWA,grade_Math,grade_English,grade_Science,fchoice,schoice,tchoice,raw_score,remarks,date_ad,photo_link) VALUES ('".$fn."','".$gender."','".$lsa."','".$sc."',".$gwa.",".$math.",".$eng.",".$scie.",'".$fchoice."','".$schoice."','".$tchoice."','".$rs."','".$rem."','".$date."','')";
   $res= mysqli_query($conn,$addsql);
   if($res)
   {
@@ -39,16 +39,14 @@ if(isset($_POST['add-std']))
 <body>
   <form class="form" name="add_student" method="post">
     <div class="container">
-      <div class="container-fluid">
         <nav class="navbar navbar-expand-lg" style="width: 100%; text-align: center; display: block; font-family: Times New Roman;background-color: #005080;">
           <span style="float: left; padding-left:200px;"><img src="../img/lspu.png" height="100" width="100" /></span>
           <div style="text-align: center;"><h1>Laguna State Polytechnic University</h1>
           <h2>Siniloan (Host) Campus</h2></div>
           </nav>
-        </div>
-        <h1  style="margin-top:5%; font-size: 30px; text-align: center;">ADD STUDENT</h1>
+        <h1  style="margin-top:5%; font-weight:bold; font-size: 40px; text-align: center;">ADD STUDENT</h1>
     <div class="row">
-      <div class="col-md-6 col-lg-6 upd-student">
+      <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12 upd-student">
           <label>Name: </label>
           <input type="text" name="fullname" placeholder="Full Name" required><br>
           <label>Gender: </label>
@@ -66,7 +64,7 @@ if(isset($_POST['add-std']))
           <label>Science: </label>
           <input type="text" name="grade_Science" placeholder="Grade" required><br>
         </div>
-        <div class="col col-md-6 col-lg-6 upd-student-2">
+        <div class="col col-md-6 col-lg-6 col-xs-12 col-sm-12 upd-student-2">
           <label>1st Choice: </label>
           <input type="text" name="fchoice" placeholder="Course" required><br>
           <label>2nd Choice: </label>
@@ -76,7 +74,10 @@ if(isset($_POST['add-std']))
           <label>Raw Score: </label>
           <input type="text" name="raw_score" placeholder="Input Score" required><br>
           <label>Remarks: </label>
-          <input type="text" name="remarks" placeholder="Remarks Here" required><br>
+          <select name="remarks" id="rem">
+            <option value="Qualified">Qualified</option>
+            <option value="Unqualified">Unqualified</option>
+          </select><br>
           <label>Date: </label>
           <select name="year">
             <option value="2019">2019</option>
