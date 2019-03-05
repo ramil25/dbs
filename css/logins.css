@@ -12,7 +12,6 @@ img
 {
   background: rgba(153, 157, 172, 0.7);
   border-radius: 20px;
-  margin-top: 170px;
 }
 h1
 {
@@ -58,10 +57,7 @@ input
 {
 	.lspu-logo img
 	{
-		margin-left: 30%;
-		margin-right: 30%;
-		display: block;
-		margin-bottom: -30%;
+		text-align: center;
 	}
 	.title
 	{

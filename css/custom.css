@@ -31,13 +31,10 @@ body
 	display: block;
 }
 
-#btn-vertical
-{
-	margin-top: 200px;
-}
 #btn-vertical a
 {
 	padding: 5px;
+	margin-left: 200px;
 	border-radius: 20px;
 	width: 20%;
 	font-weight: bold;

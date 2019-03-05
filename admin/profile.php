@@ -16,15 +16,15 @@
   				<div style="text-align: center;"><h1>Laguna State Polytechnic University</h1>
   				<h2>Siniloan (Host) Campus</h2></div>
   				</nav>
-        <div id="btn-vertical">
-					<ul class="pull-left mt-10">
+			</div>
+
+		</div>
+		<div id="btn-vertical">
+					<ul class="">
 					<li><a href="update_profile.php" class="btn btn-success btn-lg">Edit Profile</a></li>
 					<li><a href="#" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-envelope">Message</span></a></li>
 				</ul>
 				</div>
-			</div>
-
-		</div>
 		</div>
 
 		<div class="csidebar">

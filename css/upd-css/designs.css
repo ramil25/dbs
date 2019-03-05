@@ -210,12 +210,13 @@ nav h1
 }
 .upd-student-2 select
 {
-  width: 90px;
+  width: 220px;
   padding: 3px;
-  color: #000000;
+  color: #ffffff;
   font-size: 24px;
   text-indent: 12px;
-  	background: #ffffff;
+  	background: #222a35;
+	margin-right: 50px;
 	float:right;
 	border-radius: 5px;
 	border: none;

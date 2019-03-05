@@ -1,6 +1,6 @@
 <?php
 $sid =$_GET['std_id'];
-$conn = mysqli_connect('localhost','root','','databank');
+require '../db.php';
 if($conn)
 {
   $sql ="SELECT * FROM students WHERE student_id=".$sid;
@@ -59,7 +59,11 @@ if($conn)
           <label>Raw Score: </label>
           <input type="text" name="raw_score" value="<?php echo $fetch['raw_score']; ?>" ><br>
           <label>Remarks: </label>
-          <input type="text" name="remarks" value="<?php echo $fetch['remarks']; ?>" ><br>
+          <label>Remarks: </label>
+          <select name="remarks" id="rem" value="<?php echo$fetch['schoice']; ?>">
+            <option value="Qualified">Qualified</option>
+            <option value="Unqualified">Unqualified</option>
+          </select><br>
       </div>
 
       <div class="upd-btn">
