@@ -37,7 +37,7 @@ if($conn)
 <html>
 <head>
 	<title>Login Page</title>
-	<link href="bootstrap-4.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/logins.css">
 	<link rel="icon" href="img/lspu.png">
 </head>
